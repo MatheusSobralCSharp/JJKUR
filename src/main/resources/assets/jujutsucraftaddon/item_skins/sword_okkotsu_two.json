@@ -1,0 +1,11 @@
+{
+    "trail": {
+    	"color": [255, 255, 255],
+    	"begin_pos": [0.0, 0.0, -0.2],
+    	"end_pos": [0.0, 0.0, -1.5],
+    	"lifetime": 8,
+		"interpolations": 8,
+    	"texture_path": "epicfight:textures/particle/cursed_energy.png",
+    	"particle_type": "epicfight:swing_trail"
+    }
+}

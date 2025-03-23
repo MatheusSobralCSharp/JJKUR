@@ -1,0 +1,83 @@
+{
+	"category": "axe",
+	"hit_particle": "epicfight:entity.hit.blunt",
+	"hit_sound": "epicfight:entity.hit.blunt",
+	"swing_sound": "epicfight:entity.weapon.whoosh_hard",
+	"styles":
+	{
+		"cases":
+		[
+			{
+				"condition": "epicfight:offhand_category",
+				"predicate": {
+					"category": "spear"
+				},
+				"style": "two_hand"
+			}
+		],
+		"default": "one_hand"
+	},
+	"offhand_item_compatible_predicate":
+	{
+		"condition": "epicfight:offhand_category",
+		"predicate": {
+			"category": "spear"
+		}
+	},
+	"collider":
+    {
+        "number": 3,
+        "center": [0.0, 0.0, -0.75],
+        "size": [0.4, 0.4, 0.8]
+    },
+    "combos":
+    {
+    	"one_hand":
+    	[
+			"epicfight:biped/combat/longsword_auto2",
+			"wom:biped/combat/katana_auto_3",
+			"wom:biped/combat/torment_auto_1",
+			"epicfight:biped/combat/dagger_dual_auto4",
+			"epicfight:biped/skill/revelation_normal",
+			"epicfight:biped/combat/greatsword_airslash",
+			"epicfight:biped/skill/the_guillotine"
+    	],
+    	"two_hand":
+    	[
+			"epicfight:biped/combat/longsword_auto2",
+			"wom:biped/combat/katana_auto_3",
+			"wom:biped/combat/torment_auto_1",
+			"epicfight:biped/combat/dagger_dual_auto4",
+			"epicfight:biped/skill/revelation_normal",
+			"epicfight:biped/combat/greatsword_airslash",
+			"epicfight:biped/skill/the_guillotine"
+    	],
+    	"mount":
+    	[
+    		"epicfight:biped/combat/sword_mount_attack"
+    	]
+    },
+    "innate_skills":
+    {
+    	"one_hand": "epicfight:blade_rush",
+    	"two_hand": "epicfight:blade_rush"
+    },
+    "livingmotion_modifier": {
+    	"one_hand":
+    	{
+    		"block": "epicfight:biped/skill/guard_longsword",
+			"idle": "wom:biped/living/enderblaster_onehand_idle",
+			"run" : "wom:biped/living/katana_run",
+			"walk": "epicfight:biped/living/hold_tachi",
+			"chase": "wom:biped/living/katana_run"
+    	},
+    	"two_hand":
+    	{
+    		"block": "epicfight:biped/skill/guard_longsword",
+			"idle": "wom:biped/living/enderblaster_onehand_idle",
+			"run" : "wom:biped/living/katana_run",
+			"walk": "epicfight:biped/living/hold_tachi",
+			"chase": "wom:biped/living/katana_run"
+    	}
+    }
+}

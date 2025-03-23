@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bloodarms1"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:anti_veil_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.testing_phase.title"
+    },
+    "description": {
+      "translate": "advancements.testing_phase.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "testing_phase_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

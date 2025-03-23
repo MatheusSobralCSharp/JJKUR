@@ -1,0 +1,8 @@
+{
+  "parent": "jujutsucraftaddon:custom/glock",
+  "textures": {
+    "0": "jujutsucraftaddon:block/slide",
+    "1": "jujutsucraftaddon:block/barrel",
+    "particle": "jujutsucraftaddon:item/mai_gun"
+  }
+}

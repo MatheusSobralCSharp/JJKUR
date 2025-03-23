@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"toji5": {
+			"loop": true,
+			"animation_length": 0.32,
+			"bones": {
+				"RotHead": {
+					"rotation": {
+						"vector": [0, 52.5, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-132.43535, -18.33693, 73.08315]
+						},
+						"0.08": {
+							"vector": [-29.33187, -9.13488, 91.39099]
+						},
+						"0.16": {
+							"vector": [-137.82282, 13.28152, 130.69203]
+						},
+						"0.24": {
+							"vector": [-172.32731, 40.991, 229.67064]
+						},
+						"0.32": {
+							"vector": [-132.43535, -18.33693, 73.08315]
+						}
+					},
+					"position": {
+						"0.08": {
+							"vector": [0, 0, 0]
+						},
+						"0.16": {
+							"vector": [0, -2, -3]
+						},
+						"0.24": {
+							"vector": [0, 1, -1]
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [0, 0, -7.5]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"vector": [-12.48848, -0.54094, 7.55919]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"vector": [15, 0, -7.5]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

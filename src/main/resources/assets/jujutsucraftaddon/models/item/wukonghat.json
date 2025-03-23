@@ -1,0 +1,9 @@
+{
+	"parent": "jujutsucraftaddon:custom/wukonghat",
+	"textures": {
+		"0": "jujutsucraftaddon:block/wukonghat",
+		"2": "jujutsucraftaddon:block/wukonghat2",
+		"missing": "jujutsucraftaddon:block/",
+		"particle": "jujutsucraftaddon:item/wukong_helmet_icon"
+	}
+}

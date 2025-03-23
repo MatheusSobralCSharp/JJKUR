@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:kenjaku_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.reverse_cursed_burnout.title"
+    },
+    "description": {
+      "translate": "advancements.reverse_cursed_burnout.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reverse_cursed_burnout_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:reverse_cursed_mastery"
+}

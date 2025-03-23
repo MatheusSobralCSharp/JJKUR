@@ -1,0 +1,12 @@
+{
+	"attributes":
+	{
+		"common":
+		{
+			"impact":2.6,
+			"max_strikes":2,
+ 			"speed_bonus":1.5
+		}
+	},
+	"type":"wom:staff"
+}

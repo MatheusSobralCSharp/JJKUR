@@ -1,0 +1,40 @@
+{
+  "forge_marker": 1,
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "jujutsucraftaddon:models/item/untitled2.obj",
+  "flip-v": true,
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [6.7, -7, 5.3],
+      "rotation": [89.5, 0.25, 0],
+      "scale": [0.82, 0.65, 0.65]
+    },
+    "firstperson_righthand": {
+      "translation": [13, -6, 0],
+      "rotation": [85, 0, 0],
+      "scale": [0.8, 0.7, 0.75]
+    },
+    "thirdperson_lefthand": {
+      "translation": [-6.7, -7, 5.3],
+      "rotation": [89.5, 0.25, 0],
+      "scale": [0.82, 0.65, 0.65]
+    },
+    "firstperson_lefthand": {
+      "translation": [13, -6, 0],
+      "rotation": [85, 0, 0],
+      "scale": [0.8, 0.7, 0.75]
+    }
+  },
+  "textures": {
+    "back.001": "jujutsucraftaddon:block/back",
+    "cover.001": "jujutsucraftaddon:block/cover",
+    "rope.001": "jujutsucraftaddon:block/rope",
+    "inside.001": "jujutsucraftaddon:block/inside",
+    "bottem.001": "jujutsucraftaddon:block/bottem",
+    "blade.001": "jujutsucraftaddon:block/blade",
+    "handle.001": "jujutsucraftaddon:block/handle",
+    "surface.001": "jujutsucraftaddon:block/surface",
+    "particle": "jujutsucraftaddon:item/purple3"
+  }
+}

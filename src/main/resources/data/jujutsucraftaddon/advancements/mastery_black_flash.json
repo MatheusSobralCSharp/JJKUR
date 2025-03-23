@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:kokusen"
+    },
+    "title": {
+      "translate": "advancements.mastery_black_flash.title"
+    },
+    "description": {
+      "translate": "advancements.mastery_black_flash.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "mastery_black_flash_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

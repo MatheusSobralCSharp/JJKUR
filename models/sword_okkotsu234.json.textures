@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "sword_okkotsu_2",
+        "4": "sword_blade",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

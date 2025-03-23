@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:extension_technique_symbol"
+    },
+    "title": {
+      "translate": "advancements.extension_technique.title"
+    },
+    "description": {
+      "translate": "advancements.extension_technique.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "extension_technique_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

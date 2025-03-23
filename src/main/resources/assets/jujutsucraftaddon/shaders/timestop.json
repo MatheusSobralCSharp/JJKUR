@@ -1,0 +1,24 @@
+{
+    "targets": [
+        "swap",
+        "swap2"
+    ],
+    "passes": [
+        {
+            "name": "color_convolve",
+            "intarget": "minecraft:main",
+            "outtarget": "swap2",
+            "uniforms": [
+                {
+                    "name": "Saturation",
+                    "values": [ 0.0 ]
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "swap2",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

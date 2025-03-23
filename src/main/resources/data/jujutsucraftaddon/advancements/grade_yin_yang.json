@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:yin_yang"
+    },
+    "title": {
+      "translate": "advancements.grade_yin_yang.title"
+    },
+    "description": {
+      "translate": "advancements.grade_yin_yang.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "grade_yin_yang_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:grade_wu"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "jujutsucraftaddon:custom/sword_okkotsupurple",
+  "textures": {
+    "3": "jujutsucraftaddon:block/sword_okkotsu_purple",
+    "4": "jujutsucraftaddon:block/sword_blade",
+    "missing": "jujutsucraftaddon:block/",
+    "particle": "jujutsucraftaddon:item/fether"
+  }
+}

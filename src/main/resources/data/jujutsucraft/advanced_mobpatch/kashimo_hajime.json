@@ -1,0 +1,247 @@
+{
+  "renderer": "minecraft:zombie",
+  "humanoid_weapon_motions": [
+    {
+      "weapon_categories": [
+        "tachi"
+      ],
+      "livingmotions": {
+        "idle": "epicfight:biped/living/idle",
+        "chase": "epicfight:biped/living/walk",
+        "walk": "epicfight:biped/living/walk"
+      },
+      "style": "common"
+    }
+  ],
+  "hit_sound": "epicfight:entity.weapon.whoosh_sharp",
+  "faction": "neutral",
+  "swing_sound": "epicfight:entity.weapon.whoosh_small",
+  "stun_animations": {
+        "short": "epicfight:biped/combat/hit_short",
+        "long": "epicfight:biped/combat/hit_long",
+        "knockdown": "epicfight:biped/combat/knockdown",
+        "fall": "epicfight:biped/living/landing"
+    },
+  "model": "epicfight:entity/biped",
+  "attributes": {
+    "stun_armor": 0.2,
+    "chasing_speed": 2.6,
+    "impact": 0.6,
+    "armor_negation": 0.0
+  },
+  "default_livingmotions": {
+    "death": "epicfight:biped/living/death",
+    "idle": "epicfight:biped/living/idle",
+    "chase": "epicfight:biped/living/run",
+    "walk": "epicfight:biped/living/walk"
+  },
+  "armature": "epicfight:entity/biped",
+    "combat_behavior": [
+        {
+            "weapon_categories": ["axe", "hoe", "pickaxe", "shovel", "spear", "staff"],
+            "style": "common",
+            "behavior_series": [
+                {
+                    "weight": 40.0,
+                    "canBeInterrupted": true,
+                    "looping": true,
+                    "behaviors": [
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 5.2}
+                            ],
+                            "animation": "epicfight:biped/combat/spear_dash"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/staff_kingkong"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 10.0, "max": 100.0}
+                            ],
+                            "animation": "wom:biped/skill/shadow_step_forward"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_onehand_dash"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/skill/enderstep_backward"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "epicfight:biped/skill/sharp_stab"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "epicfight:biped/skill/heartpiercer"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/staff_auto_1"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/staff_auto_2"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/staff_auto_3"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/skill/staff_charybdisandscylla"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/skill/enderstep_left"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/skill/enderstep_right"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/agony_auto_3"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/agony_auto_4"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_onehand_auto_1"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_onehand_auto_1"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/moonless_auto_2"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/moonless_auto_3"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "epicfight:biped/combat/trident_auto3"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/skill/torment_berserk_dash"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 2.2}
+                            ],
+                            "animation": "wom:biped/skill/shadow_step_backward"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "weapon_categories": ["fist", "enderblaster"],
+            "style": "common",
+            "behavior_series": [
+                {
+                    "weight": 100.0,
+                    "canBeInterrupted": true,
+                    "looping": true,
+                    "behaviors": [
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 4.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_twohand_tishnaw"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 4.0}
+                            ],
+                            "animation": "epicfight:biped/skill/roll_backward"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_twohand_dash"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/torment_charged_attack_3"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 10.0}
+                            ],
+                            "animation": "wom:biped/combat/enderblaster_onehand_dash"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 4.0}
+                            ],
+                            "animation": "epicfight:biped/combat/dagger_auto2"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 4.0}
+                            ],
+                            "animation": "wom:biped/skill/kick"
+                        },
+                        {
+                            "conditions": [
+                                {"predicate":"within_eye_height"}, {"predicate":"within_distance", "min": 0.0, "max": 4.0}
+                            ],
+                            "animation": "epicfight:biped/combat/dagger_dual_auto2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

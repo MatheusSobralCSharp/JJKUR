@@ -1,0 +1,6 @@
+{
+  "parent": "jujutsucraftaddon:displaysettings/wukongstaff.item",
+  "textures": {
+    "layer0": "jujutsucraftaddon:item/playful_cloud"
+  }
+}

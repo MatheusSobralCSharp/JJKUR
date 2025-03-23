@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "back.002": "back",
+        "cover.002": "cover",
+        "inside.002": "inside",
+        "sheath.001": "sheath",
+        "handle.002": "handle",
+        "bottem.002": "bottem",
+        "blade.002": "blade",
+        "rope.002": "rope",
+        "surface.002": "surface"
+      },
+      "name": "default"
+    }
+  }
+}

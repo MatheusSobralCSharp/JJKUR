@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "jujutsucraftaddon:mugiwara_helmet",
+    "count": 1
+  }
+}

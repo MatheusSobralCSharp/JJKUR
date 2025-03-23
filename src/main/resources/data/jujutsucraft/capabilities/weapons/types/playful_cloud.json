@@ -1,0 +1,97 @@
+{
+	"category": "spear",
+	"hit_particle": "epicfight:entity.hit.blunt",
+	"hit_sound": "epicfight:entity.hit.blunt",
+	"swing_sound": "epicfight:entity.weapon.whoosh_hard",
+	"styles":
+	{
+		"cases":
+		[
+			{
+				"condition": "epicfight:offhand_category",
+				"predicate": {
+					"category": "spear"
+				},
+				"style": "two_hand"
+			}
+		],
+		"default": "two_hand"
+	},
+	"offhand_item_compatible_predicate":
+	{
+		"condition": "epicfight:offhand_category",
+		"predicate": {
+			"category": "uchigatana"
+		}
+	},
+	"collider":
+    {
+        "number": 3,
+        "center": [0.0, 0.0, -0.75],
+        "size": [0.4, 0.4, 0.8]
+    },
+    "combos":
+    {
+    	"one_hand":
+    	[
+			"falchionmoveset:biped/falchion/falchion_auto1",
+			"falchionmoveset:biped/falchion/falchion_auto2",
+			"wom:biped/combat/moonless_auto_2",
+			"wom:biped/combat/agony_auto_3",
+			"falchionmoveset:biped/falchion/falchion_auto3",
+			"wom:biped/combat/enderblaster_onehand_auto_1",
+			"wom:biped/combat/enderblaster_onehand_auto_2",
+			"wom:biped/combat/enderblaster_twohand_dash",
+			"falchionmoveset:biped/falchion/falchion_side",
+			"wom:biped/combat/staff_auto_3",
+			"wom:biped/combat/enderblaster_twohand_tishnaw",
+			"epicfight:biped/combat/spear_twohand_airslash"
+    	],
+    	"two_hand":
+    	[
+			"falchionmoveset:biped/falchion/falchion_auto1",
+			"falchionmoveset:biped/falchion/falchion_auto2",
+			"wom:biped/combat/moonless_auto_2",
+			"wom:biped/combat/agony_auto_3",
+			"falchionmoveset:biped/falchion/falchion_auto3",
+			"wom:biped/combat/enderblaster_onehand_auto_1",
+			"wom:biped/combat/enderblaster_onehand_auto_2",
+			"wom:biped/combat/enderblaster_twohand_dash",
+			"falchionmoveset:biped/falchion/falchion_side",
+			"wom:biped/combat/staff_auto_3",
+			"wom:biped/combat/enderblaster_twohand_tishnaw",
+			"epicfight:biped/combat/spear_twohand_airslash"
+    	],
+    	"mount":
+    	[
+    		"epicfight:biped/combat/sword_mount_attack"
+    	]
+    },
+    "innate_skills":
+    {
+    	"one_hand": "falchionmoveset:falchion_art",
+    	"two_hand": "falchionmoveset:falchion_art"
+    },
+    "livingmotion_modifier": {
+    	"one_hand":
+    	{
+    		"block": "epicfight:biped/skill/guard_spear",
+			"idle": "falchionmoveset:biped/falchion/falchion_idle",
+			"run" : "wom:biped/living/antitheus_run",
+			"walk": "wom:biped/living/moonless_walk"
+    	},
+    	"two_hand":
+    	{
+    		"block": "wom:biped/skill/agony_guard",
+		"idle": "falchionmoveset:biped/falchion/falchion_idle",
+		"run" : "wom:biped/living/antitheus_run",
+		"walk": "wom:biped/living/moonless_walk",
+    		"kneel": "epicfight:biped/living/hold_dual",
+    		"chase": "epicfight:biped/living/hold_dual",
+    		"sneak": "epicfight:biped/living/hold_dual",
+    		"swim": "epicfight:biped/living/hold_dual",
+    		"float": "epicfight:biped/living/hold_dual",
+    		"fall": "epicfight:biped/living/hold_dual"
+    	}
+    }
+}

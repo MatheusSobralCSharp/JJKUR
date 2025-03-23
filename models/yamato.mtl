@@ -1,0 +1,80 @@
+newmtl back
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl blade
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl bottem
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl cover
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl handle
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl inside
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl rope
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0
+newmtl surface
+illum 2
+Ns 250.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+map_Kd null
+Ke 0.0 0.0 0.0

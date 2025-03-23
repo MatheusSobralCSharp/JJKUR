@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "jujutsucraftaddon:white_cape_chestplate"
+    },
+    "b": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "result": {
+    "item": "jujutsucraftaddon:red_cape_chestplate",
+    "count": 1
+  }
+}

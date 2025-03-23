@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jujutsucraftaddon:block/curtain",
+    "up": "jujutsucraftaddon:block/curtain",
+    "north": "jujutsucraftaddon:block/curtain",
+    "east": "jujutsucraftaddon:block/curtain",
+    "south": "jujutsucraftaddon:block/curtain",
+    "west": "jujutsucraftaddon:block/curtain",
+    "particle": "jujutsucraftaddon:block/curtain"
+  },
+  "render_type": "translucent"
+}

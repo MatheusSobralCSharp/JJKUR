@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "sheath": "sheath"
+      },
+      "name": "default"
+    }
+  }
+}

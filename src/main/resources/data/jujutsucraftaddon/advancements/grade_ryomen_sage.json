@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:decisive_chestplate"
+    },
+    "title": {
+      "translate": "advancements.grade_ryomen_sage.title"
+    },
+    "description": {
+      "translate": "advancements.grade_ryomen_sage.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "grade_ryomen_sage_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:grade_wu"
+}

@@ -1,0 +1,113 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idletoji": {
+			"animation_length": 3,
+			"bones": {
+				"Cursed_worm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [2.5, 0, 0]
+						},
+						"3.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"ISOH": {
+					"rotation": {
+						"vector": [-20, 0, 0]
+					},
+					"scale": {
+						"vector": [1, 1, 1]
+					}
+				},
+				"Split_soul_katana": {
+					"rotation": {
+						"0.0": {
+							"vector": [-30, 0, 0]
+						},
+						"3.0": {
+							"vector": [-30, 0, 0]
+						}
+					},
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Fire": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Chain6": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Playful_cloud": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Pistol": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-152.5, 47.5, 0]
+						},
+						"1.5": {
+							"vector": [-152.5, 47.5, 0]
+						},
+						"3.0": {
+							"vector": [-152.5, 47.5, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [-1, -2, 0]
+						},
+						"1.5": {
+							"vector": [0, -3, 0]
+						},
+						"3.0": {
+							"vector": [-1, -2, 0]
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, -2.5]
+						},
+						"3.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, -1, 0]
+						},
+						"3.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

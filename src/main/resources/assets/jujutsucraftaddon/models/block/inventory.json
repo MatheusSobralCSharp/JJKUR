@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/allium",
+    "up": "minecraft:block/structure_block_data",
+    "north": "minecraft:block/anvil",
+    "east": "minecraft:block/allium",
+    "south": "minecraft:block/allium",
+    "west": "minecraft:block/allium",
+    "particle": "minecraft:block/allium"
+  },
+  "render_type": "solid"
+}

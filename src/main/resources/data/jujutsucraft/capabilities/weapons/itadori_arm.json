@@ -1,0 +1,13 @@
+{
+	"attributes":
+	{
+		"common":
+		{
+			"impact":2.4,
+			"max_strikes":2,
+			"armor_negation": 70.0,
+			"speed_bonus":1.2
+		}
+	},
+	"type":"jujutsucraft:glove"
+}

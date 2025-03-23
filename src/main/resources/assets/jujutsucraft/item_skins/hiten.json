@@ -1,0 +1,11 @@
+{
+    "trail": {
+    	"color": [255, 255, 255],
+    	"begin_pos": [0.0, 0.0, -0.5],
+    	"end_pos": [0.0, 0.0, -1.5],
+    	"lifetime": 4,
+		"interpolations": 8,
+    	"texture_path": "epicfight:textures/particle/hiten.png",
+    	"particle_type": "epicfight:swing_trail"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:gojo_training_final"
+    },
+    "title": {
+      "translate": "advancements.nah_id_win.title"
+    },
+    "description": {
+      "translate": "advancements.nah_id_win.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nah_id_win_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bucket"
+    },
+    "b": {
+      "item": "jujutsucraft:sukuna_finger"
+    }
+  },
+  "result": {
+    "item": "jujutsucraftaddon:yoku_bucket",
+    "count": 1
+  }
+}

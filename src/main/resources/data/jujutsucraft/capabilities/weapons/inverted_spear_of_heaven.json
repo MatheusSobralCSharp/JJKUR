@@ -1,0 +1,11 @@
+{
+    "type": "jujutsucraft:inverted_spear_of_heaven",
+    "attributes": {
+        "common": {
+            "armor_negation": 60.0,
+                "impact": 2.3,
+            "max_strikes": 2,
+	"speed_bonus": 1.6
+        }
+    }
+ }

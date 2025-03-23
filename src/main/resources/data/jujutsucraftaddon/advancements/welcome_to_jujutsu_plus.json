@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "jujutsucraftaddon:race_changer"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_jujutsu_plus.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_jujutsu_plus.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcome_to_jujutsu_plus_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+	"category": "fist",
+	"hit_particle": "epicfight:entity.hit.blunt",
+	"hit_sound": "epicfight:entity.hit.blunt",
+	"swing_sound": "epicfight:entity.weapon.whoosh_hard",
+	"styles":
+	{
+		"cases":
+		[
+			{
+				"condition": "epicfight:offhand_category",
+				"predicate": {
+					"category": "fist"
+				},
+				"style": "two_hand"
+			}
+		],
+		"default": "two_hand"
+	},
+	"offhand_item_compatible_predicate":
+	{
+		"condition": "epicfight:offhand_category",
+		"predicate": {
+			"category": "fist"
+		}
+	},
+	"collider":
+    {
+        "number": 3,
+        "center": [0.0, 0.0, -0.75],
+        "size": [0.4, 0.4, 0.8]
+    },
+    "combos":
+    {
+    	"two_hand":
+    	[
+			"wom:biped/combat/enderblaster_onehand_auto_1",
+			"wom:biped/combat/moonless_auto_2",
+			"wom:biped/combat/enderblaster_onehand_auto_2",
+			"wom:biped/combat/enderblaster_twohand_dash",
+			"wom:biped/combat/enderblaster_onehand_auto_4",
+			"epicfight:biped/combat/fist_auto1",
+			"epicfight:biped/combat/fist_auto2",
+			"epicfight:enderman/knee",
+			"wom:biped/combat/enderblaster_onehand_auto_3",
+			"epicfight:biped/combat/spear_dash",
+			"epicfight:biped/skill/eviscerate_second",
+			"wom:biped/combat/enderblaster_twohand_tishnaw"
+    	],
+    	"mount":
+    	[
+    		"epicfight:biped/combat/sword_mount_attack"
+    	]
+    },
+    "innate_skills":
+    {
+    	"two_hand": "wom:agony_plunge"
+    },
+    "livingmotion_modifier": {
+    	"two_hand":
+    	{
+    		"block": "wom:biped/skill/herrscher_guard",
+    		"idle": "epicfight:biped/living/idle",
+    		"kneel": "epicfight:biped/living/hold_dual",
+    		"walk": "epicfight:biped/living/walk",
+    		"chase": "epicfight:biped/living/hold_dual",
+    		"run": "epicfight:biped/living/run",
+    		"sneak": "epicfight:biped/living/hold_dual",
+    		"swim": "epicfight:biped/living/hold_dual",
+    		"float": "epicfight:biped/living/hold_dual",
+    		"fall": "epicfight:biped/living/hold_dual"
+    	}
+    }
+}

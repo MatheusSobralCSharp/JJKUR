@@ -1,0 +1,11 @@
+{
+	"attributes":
+	{
+		"one_hand":
+		{
+			"impact":1.9,
+			"max_strikes":2
+		}
+	},
+	"type":"epicfight:spear"
+}

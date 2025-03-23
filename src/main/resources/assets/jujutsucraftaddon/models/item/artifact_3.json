@@ -1,0 +1,6 @@
+{
+  "parent": "jujutsucraftaddon:displaysettings/artifact",
+  "textures": {
+    "layer0": "jujutsucraftaddon:item/amuleto3"
+  }
+}

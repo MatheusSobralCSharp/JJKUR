@@ -1,0 +1,12 @@
+{
+	"attributes":
+	{
+		"two_hand":
+		{
+			"impact":0.9,
+			"max_strikes":2,
+			"speed_bonus": 2.1
+		}
+	},
+	"type":"jujutsucraft:inverted_spear_of_heaven"
+}

@@ -1,0 +1,1204 @@
+{
+  "bullet": {
+    "subtitle": "subtitles.bullet",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:9mm-pistol-shot-6349",
+        "stream": false
+      }
+    ]
+  },
+  "swordsweeep": {
+    "subtitle": "subtitles.swordsweeep",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_sweep",
+        "stream": false
+      }
+    ]
+  },
+  "strong": {
+    "subtitle": "subtitles.strong",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:hit_strong",
+        "stream": true
+      }
+    ]
+  },
+  "cursedspeech": {
+    "subtitle": "subtitles.cursedspeech",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:cursed_speech",
+        "stream": true
+      }
+    ]
+  },
+  "sokamona": {
+    "subtitle": "subtitles.sokamona",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sokamona",
+        "stream": true
+      }
+    ]
+  },
+  "gojo": {
+    "subtitle": "subtitles.gojo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:gojo",
+        "stream": true
+      }
+    ]
+  },
+  "murasakii": {
+    "subtitle": "subtitles.murasakii",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:murasaki",
+        "stream": false
+      }
+    ]
+  },
+  "mahoragalero": {
+    "subtitle": "subtitles.mahoragalero",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:mahoraga",
+        "stream": false
+      }
+    ]
+  },
+  "satorugojo": {
+    "subtitle": "subtitles.satorugojo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:gojosatoruc",
+        "stream": true
+      }
+    ]
+  },
+  "punch": {
+    "subtitle": "subtitles.punch",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:slam",
+        "stream": false
+      }
+    ]
+  },
+  "dash": {
+    "subtitle": "subtitles.dash",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:dash",
+        "stream": false
+      }
+    ]
+  },
+  "sword": {
+    "subtitle": "subtitles.sword",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_sweep",
+        "stream": false
+      }
+    ]
+  },
+  "shokovoice2": {
+    "subtitle": "subtitles.shokovoice2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:shokovoice2",
+        "stream": false
+      }
+    ]
+  },
+  "kusakabe": {
+    "subtitle": "subtitles.kusakabe",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:kusakabe",
+        "stream": false
+      }
+    ]
+  },
+  "furubeyurayura": {
+    "subtitle": "subtitles.furubeyurayura",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:furubeyurayura",
+        "stream": false
+      }
+    ]
+  },
+  "jihei": {
+    "subtitle": "subtitles.jihei",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:jihei",
+        "stream": false
+      }
+    ]
+  },
+  "fukumamizushi": {
+    "subtitle": "subtitles.fukumamizushi",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:fukumamizushi",
+        "stream": false
+      }
+    ]
+  },
+  "gak": {
+    "subtitle": "subtitles.gak",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:gak",
+        "stream": false
+      }
+    ]
+  },
+  "muryokusho": {
+    "subtitle": "subtitles.muryokusho",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:muryokusho",
+        "stream": false
+      }
+    ]
+  },
+  "kango": {
+    "subtitle": "subtitles.kango",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:kango",
+        "stream": false
+      }
+    ]
+  },
+  "swordblock": {
+    "subtitle": "subtitles.swordblock",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:swordblock",
+        "stream": false
+      }
+    ]
+  },
+  "aka2": {
+    "subtitle": "subtitles.aka2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:aka2",
+        "stream": false
+      }
+    ]
+  },
+  "karate": {
+    "subtitle": "subtitles.karate",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:karate",
+        "stream": false
+      }
+    ]
+  },
+  "punch2": {
+    "subtitle": "subtitles.punch2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:punch2",
+        "stream": false
+      }
+    ]
+  },
+  "kokusen": {
+    "subtitle": "subtitles.kokusen",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:kokusencut",
+        "stream": false
+      }
+    ]
+  },
+  "kokusennnn": {
+    "subtitle": "subtitles.kokusennnn",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:kokusennnn",
+        "stream": false
+      }
+    ]
+  },
+  "tucadonca": {
+    "subtitle": "subtitles.tucadonca",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:hakari1",
+        "stream": true
+      }
+    ]
+  },
+  "sukunavsmaho": {
+    "subtitle": "subtitles.sukunavsmaho",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunavsmaho",
+        "stream": true
+      }
+    ]
+  },
+  "sukunavsjogo": {
+    "subtitle": "subtitles.sukunavsjogo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunavsjogo",
+        "stream": true
+      }
+    ]
+  },
+  "tojivsdagonvsyujivsmahito": {
+    "subtitle": "subtitles.tojivsdagonvsyujivsmahito",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:tojivsdagonvsyujivsmahito",
+        "stream": true
+      }
+    ]
+  },
+  "gojovstoji": {
+    "subtitle": "subtitles.gojovstoji",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:gojovstoji",
+        "stream": true
+      }
+    ]
+  },
+  "yutavsgeto": {
+    "subtitle": "subtitles.yutavsgeto",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:yutavsgeto",
+        "stream": true
+      }
+    ]
+  },
+  "getovstoji": {
+    "subtitle": "subtitles.getovstoji",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:getovstoji",
+        "stream": true
+      }
+    ]
+  },
+  "nanami": {
+    "subtitle": "subtitles.nanami",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:overtimenanami",
+        "stream": true
+      }
+    ]
+  },
+  "overtime": {
+    "subtitle": "subtitles.overtime",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:overtime",
+        "stream": true
+      }
+    ]
+  },
+  "purplexplode": {
+    "subtitle": "subtitles.purplexplode",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:muraski",
+        "stream": false
+      }
+    ]
+  },
+  "taun": {
+    "subtitle": "subtitles.taun",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:taun",
+        "stream": false
+      }
+    ]
+  },
+  "laughsukuna": {
+    "subtitle": "subtitles.laughsukuna",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:laugh",
+        "stream": false
+      }
+    ]
+  },
+  "yoaimo": {
+    "subtitle": "subtitles.yoaimo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:yoaimo",
+        "stream": false
+      }
+    ]
+  },
+  "kurusogojo": {
+    "subtitle": "subtitles.kurusogojo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:kurusogojo",
+        "stream": false
+      }
+    ]
+  },
+  "gojodeath": {
+    "subtitle": "subtitles.gojodeath",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:gojodeatham",
+        "stream": false
+      }
+    ]
+  },
+  "gabare": {
+    "subtitle": "subtitles.gabare",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:ganbareamp",
+        "stream": false
+      }
+    ]
+  },
+  "hit": {
+    "subtitle": "subtitles.hit",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blunt_hit1",
+        "stream": false
+      }
+    ]
+  },
+  "hit2": {
+    "subtitle": "subtitles.hit2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blunt_hit2",
+        "stream": false
+      }
+    ]
+  },
+  "hit3": {
+    "subtitle": "subtitles.hit3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blunt_hit3",
+        "stream": false
+      }
+    ]
+  },
+  "hitblade1": {
+    "subtitle": "subtitles.hitblade1",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blade_hit1",
+        "stream": false
+      }
+    ]
+  },
+  "hitblade2": {
+    "subtitle": "subtitles.hitblade2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blade_hit2",
+        "stream": false
+      }
+    ]
+  },
+  "hitblade3": {
+    "subtitle": "subtitles.hitblade3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blade_hit3",
+        "stream": false
+      }
+    ]
+  },
+  "domainbreaker": {
+    "subtitle": "subtitles.domainbreaker",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:domain_breaker",
+        "stream": false
+      }
+    ]
+  },
+  "maximumblu": {
+    "subtitle": "subtitles.maximumblu",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:ao",
+        "stream": false
+      }
+    ]
+  },
+  "tojispear": {
+    "subtitle": "subtitles.tojispear",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:tojispear",
+        "stream": false
+      }
+    ]
+  },
+  "playfulhit": {
+    "subtitle": "subtitles.playfulhit",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:playfulhit",
+        "stream": false
+      }
+    ]
+  },
+  "playfulhit2": {
+    "subtitle": "subtitles.playfulhit2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:playfulhi2",
+        "stream": false
+      }
+    ]
+  },
+  "playfulhit3": {
+    "subtitle": "subtitles.playfulhit3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:playfulhit3",
+        "stream": false
+      }
+    ]
+  },
+  "playfulhit4": {
+    "subtitle": "subtitles.playfulhit4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:playfulhit4",
+        "stream": false
+      }
+    ]
+  },
+  "tojichains": {
+    "subtitle": "subtitles.tojichains",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:tojichains",
+        "stream": false
+      }
+    ]
+  },
+  "itadorivsmahito": {
+    "subtitle": "subtitles.itadorivsmahito",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:itadorivsmahito",
+        "stream": true
+      }
+    ]
+  },
+  "nanamitheme": {
+    "subtitle": "subtitles.nanamitheme",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:nanamitheme",
+        "stream": true
+      }
+    ]
+  },
+  "chosovsitadori": {
+    "subtitle": "subtitles.chosovsitadori",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:choso",
+        "stream": true
+      }
+    ]
+  },
+  "meteor": {
+    "subtitle": "subtitles.meteor",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:meteor",
+        "stream": false
+      }
+    ]
+  },
+  "chosovsyuuuji": {
+    "subtitle": "subtitles.chosovsyuuuji",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:chosovsyuuuuji",
+        "stream": true
+      }
+    ]
+  },
+  "isohsound": {
+    "subtitle": "subtitles.isohsound",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:inverted_spear_of_heaven",
+        "stream": false
+      }
+    ]
+  },
+  "batto": {
+    "subtitle": "subtitles.batto",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:batto",
+        "stream": false
+      }
+    ]
+  },
+  "clap": {
+    "subtitle": "subtitles.clap",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:clap",
+        "stream": false
+      }
+    ]
+  },
+  "judas": {
+    "subtitle": "subtitles.judas",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:judas",
+        "stream": true
+      }
+    ]
+  },
+  "okkotsudomainvc": {
+    "subtitle": "subtitles.okkotsudomainvc",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:okkotsudomain",
+        "stream": false
+      }
+    ]
+  },
+  "purelove": {
+    "subtitle": "subtitles.purelove",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:purelove",
+        "stream": false
+      }
+    ]
+  },
+  "rikasummon": {
+    "subtitle": "subtitles.rikasummon",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:summonrika",
+        "stream": false
+      }
+    ]
+  },
+  "kokusenmahito": {
+    "subtitle": "subtitles.kokusenmahito",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:mahito_black_flash_v2",
+        "stream": false
+      }
+    ]
+  },
+  "kokusentodo": {
+    "subtitle": "subtitles.kokusentodo",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:todo_black_flash",
+        "stream": false
+      }
+    ]
+  },
+  "senketsu": {
+    "subtitle": "subtitles.senketsu",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:senketsuu",
+        "stream": false
+      }
+    ]
+  },
+  "piercingblood": {
+    "subtitle": "subtitles.piercingblood",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:piercing-blood",
+        "stream": false
+      }
+    ]
+  },
+  "tripping": {
+    "subtitle": "subtitles.tripping",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:tripping",
+        "stream": true
+      }
+    ]
+  },
+  "rushhr": {
+    "subtitle": "subtitles.rushhr",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:onrush",
+        "stream": false
+      }
+    ]
+  },
+  "slash2": {
+    "subtitle": "subtitles.slash2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:slash1",
+        "stream": false
+      }
+    ]
+  },
+  "sword4": {
+    "subtitle": "subtitles.sword4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword",
+        "stream": false
+      }
+    ]
+  },
+  "swing1": {
+    "subtitle": "subtitles.swing1",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_swing1",
+        "stream": false
+      }
+    ]
+  },
+  "swing2": {
+    "subtitle": "subtitles.swing2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_swing2",
+        "stream": false
+      }
+    ]
+  },
+  "swing3": {
+    "subtitle": "subtitles.swing3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_swing3",
+        "stream": false
+      }
+    ]
+  },
+  "swing4": {
+    "subtitle": "subtitles.swing4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_swing4",
+        "stream": false
+      }
+    ]
+  },
+  "swing5": {
+    "subtitle": "subtitles.swing5",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword_swing5",
+        "stream": false
+      }
+    ]
+  },
+  "punch5": {
+    "subtitle": "subtitles.punch5",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:punch1",
+        "stream": false
+      }
+    ]
+  },
+  "punch6": {
+    "subtitle": "subtitles.punch6",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:punch2",
+        "stream": false
+      }
+    ]
+  },
+  "blackflashtheme": {
+    "subtitle": "subtitles.blackflashtheme",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:blackflashtheme",
+        "stream": true
+      }
+    ]
+  },
+  "standproudsukuna": {
+    "subtitle": "subtitles.standproudsukuna",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:standproudsukuna",
+        "stream": false
+      }
+    ]
+  },
+  "meditationsong": {
+    "subtitle": "subtitles.meditationsong",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:meditation",
+        "stream": false
+      }
+    ]
+  },
+  "cinderella": {
+    "subtitle": "subtitles.cinderella",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:24hour",
+        "stream": true
+      }
+    ]
+  },
+  "vibraslap": {
+    "subtitle": "subtitles.vibraslap",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:vibraslap",
+        "stream": false
+      }
+    ]
+  },
+  "wukongtheme": {
+    "subtitle": "subtitles.wukongtheme",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:wukong",
+        "stream": true
+      }
+    ]
+  },
+  "wukongult": {
+    "subtitle": "subtitles.wukongult",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:bell",
+        "stream": false
+      }
+    ]
+  },
+  "wu1": {
+    "subtitle": "subtitles.wu1",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:staff1",
+        "stream": false
+      }
+    ]
+  },
+  "wu2": {
+    "subtitle": "subtitles.wu2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:staff2",
+        "stream": false
+      }
+    ]
+  },
+  "wu3": {
+    "subtitle": "subtitles.wu3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:staff3",
+        "stream": false
+      }
+    ]
+  },
+  "wu4": {
+    "subtitle": "subtitles.wu4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:staff4",
+        "stream": false
+      }
+    ]
+  },
+  "wu6": {
+    "subtitle": "subtitles.wu6",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sequencestaff",
+        "stream": false
+      }
+    ]
+  },
+  "wu7": {
+    "subtitle": "subtitles.wu7",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sequencestaff2",
+        "stream": false
+      }
+    ]
+  },
+  "wu8": {
+    "subtitle": "subtitles.wu8",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sequencestaff3",
+        "stream": false
+      }
+    ]
+  },
+  "wu9": {
+    "subtitle": "subtitles.wu9",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sequencestaff4",
+        "stream": false
+      }
+    ]
+  },
+  "wu10": {
+    "subtitle": "subtitles.wu10",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:bell",
+        "stream": false
+      }
+    ]
+  },
+  "kyoka": {
+    "subtitle": "subtitles.kyoka",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:shatter_-kyoka-suigetsu_-_mp3cut.net_",
+        "stream": false
+      }
+    ]
+  },
+  "nozarashi": {
+    "subtitle": "subtitles.nozarashi",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:nozarashi-_mp3cut.net_",
+        "stream": false
+      }
+    ]
+  },
+  "nozarashitrue": {
+    "subtitle": "subtitles.nozarashitrue",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:nozarashi",
+        "stream": false
+      }
+    ]
+  },
+  "yujidomain": {
+    "subtitle": "subtitles.yujidomain",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:yujiidomain",
+        "stream": false
+      }
+    ]
+  },
+  "sukunaheart": {
+    "subtitle": "subtitles.sukunaheart",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunavc1",
+        "stream": false
+      }
+    ]
+  },
+  "music1": {
+    "subtitle": "subtitles.music1",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music1",
+        "stream": true
+      }
+    ]
+  },
+  "music2": {
+    "subtitle": "subtitles.music2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music2",
+        "stream": true
+      }
+    ]
+  },
+  "music3": {
+    "subtitle": "subtitles.music3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music3",
+        "stream": true
+      }
+    ]
+  },
+  "music4": {
+    "subtitle": "subtitles.music4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music4",
+        "stream": true
+      }
+    ]
+  },
+  "sukunavc1": {
+    "subtitle": "subtitles.sukunavc1",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:annoyingbrat",
+        "stream": false
+      }
+    ]
+  },
+  "sukunavc2": {
+    "subtitle": "subtitles.sukunavc2",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:bakana",
+        "stream": false
+      }
+    ]
+  },
+  "sukunavc3": {
+    "subtitle": "subtitles.sukunavc3",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:bindingvowsukuna",
+        "stream": false
+      }
+    ]
+  },
+  "sukunavc4": {
+    "subtitle": "subtitles.sukunavc4",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:brat",
+        "stream": false
+      }
+    ]
+  },
+  "sukunavc5": {
+    "subtitle": "subtitles.sukunavc5",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:youreboring",
+        "stream": false
+      }
+    ]
+  },
+  "music5": {
+    "subtitle": "subtitles.music5",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music5",
+        "stream": true
+      }
+    ]
+  },
+  "music6": {
+    "subtitle": "subtitles.music6",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music6",
+        "stream": true
+      }
+    ]
+  },
+  "music7": {
+    "subtitle": "subtitles.music7",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music7",
+        "stream": false
+      }
+    ]
+  },
+  "music8": {
+    "subtitle": "subtitles.music8",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music8",
+        "stream": false
+      }
+    ]
+  },
+  "music9": {
+    "subtitle": "subtitles.music9",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music9",
+        "stream": true
+      }
+    ]
+  },
+  "music10": {
+    "subtitle": "subtitles.music10",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:music10",
+        "stream": true
+      }
+    ]
+  },
+  "kai": {
+    "subtitle": "subtitles.kai",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sword",
+        "stream": false
+      }
+    ]
+  },
+  "dismantle": {
+    "subtitle": "subtitles.dismantle",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:slash1",
+        "stream": false
+      }
+    ]
+  },
+  "congratulations": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:congratulations",
+        "stream": true
+      }
+    ]
+  },
+  "dodge": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:dbz-teleport",
+        "stream": true
+      }
+    ]
+  },
+  "dandankokoro": {
+    "subtitle": "subtitles.dandankokoro",
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:dandankokoro",
+        "stream": true
+      }
+    ]
+  },
+  "purplefinal": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:purplefinal",
+        "stream": true
+      }
+    ]
+  },
+  "sukunawaken1": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunaawaken1",
+        "stream": false
+      }
+    ]
+  },
+  "ryomensukuna": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:ryomensukuna",
+        "stream": false
+      }
+    ]
+  },
+  "sukunaawaken2": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunaawaken2",
+        "stream": false
+      }
+    ]
+  },
+  "sukunawaken3": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:sukunaawaken3",
+        "stream": false
+      }
+    ]
+  },
+  "furubeult": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:mahoragasummon",
+        "stream": false
+      }
+    ]
+  },
+  "spawncentipede": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:dig_1",
+        "stream": false
+      }
+    ]
+  },
+  "centipededescer2": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:dig_2",
+        "stream": false
+      }
+    ]
+  },
+  "screamcentipede": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:scream_2",
+        "stream": false
+      }
+    ]
+  },
+  "fuuga": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:fuga",
+        "stream": false
+      }
+    ]
+  },
+  "fugasummon": {
+    "sounds": [
+      {
+        "name": "jujutsucraftaddon:fuga_appear",
+        "stream": false
+      }
+    ]
+  }
+}

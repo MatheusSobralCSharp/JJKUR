@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:wheel"
+    },
+    "title": {
+      "translate": "advancements.save_me_mahoraga.title"
+    },
+    "description": {
+      "translate": "advancements.save_me_mahoraga.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "save_me_mahoraga_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:world_slash_advancement"
+}

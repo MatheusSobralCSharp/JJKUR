@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:decisive_chestplate"
+    },
+    "title": {
+      "translate": "advancements.grade_wu.title"
+    },
+    "description": {
+      "translate": "advancements.grade_wu.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "grade_wu_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:sorcerer_strongest_of_history"
+}

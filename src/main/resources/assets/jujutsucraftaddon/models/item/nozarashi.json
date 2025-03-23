@@ -1,0 +1,8 @@
+{
+  "parent": "jujutsucraftaddon:custom/nozarashi",
+  "textures": {
+    "1": "jujutsucraftaddon:block/noza1",
+    "2": "jujutsucraftaddon:block/noza2",
+    "particle": "jujutsucraftaddon:item/enchained"
+  }
+}

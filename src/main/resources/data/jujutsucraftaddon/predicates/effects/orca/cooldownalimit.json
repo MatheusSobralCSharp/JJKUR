@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "effects": {
+        "jujutsucraft:cooldown_time": {"duration": {"max":200}}
+      }
+    }
+  }

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jujutsucraftaddon:item/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8.u4-removebg-preview_1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "type": "wom:staff",
+    "attributes": {
+        "common": {
+            "armor_negation": 5.0,
+                "impact": 20.0,
+            "max_strikes": 4
+        }
+    }
+ }

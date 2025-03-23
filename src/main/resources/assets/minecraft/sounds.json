@@ -1,0 +1,31 @@
+{
+  "music.menu": {
+    
+    "sounds": [
+      { 
+        "name": "music/menu/menu1",
+        "weight": 5
+      },
+      { 
+        "name": "music/menu/opening2",
+        "weight": 5
+      },
+      { 
+        "name": "music/menu/ending2",
+        "weight": 5
+      },
+      { 
+        "name": "music/menu/piseiro",
+        "weight": 5
+      },
+      { 
+        "name": "music/menu/bakadarou",
+        "weight": 5
+      },
+      { 
+        "name": "music/menu/bakamitai",
+        "weight": 5
+      }
+    ], "replace": "true"
+  }
+}

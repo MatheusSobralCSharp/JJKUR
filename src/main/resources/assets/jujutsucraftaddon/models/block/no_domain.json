@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jujutsucraftaddon:block/barrel",
+    "up": "jujutsucraftaddon:block/barrel",
+    "north": "jujutsucraftaddon:block/barrel",
+    "east": "jujutsucraftaddon:block/barrel",
+    "south": "jujutsucraftaddon:block/barrel",
+    "west": "jujutsucraftaddon:block/barrel",
+    "particle": "jujutsucraftaddon:block/barrel"
+  },
+  "render_type": "solid"
+}

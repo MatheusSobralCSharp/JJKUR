@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:sukuna_armor_two_helmet"
+    },
+    "title": {
+      "translate": "advancements.bath_ritual.title"
+    },
+    "description": {
+      "translate": "advancements.bath_ritual.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bath_ritual_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:cleave_web_advancement"
+}

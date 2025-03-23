@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:speical_grade_2"
+    },
+    "title": {
+      "translate": "advancements.strong_sorcerer_grade.title"
+    },
+    "description": {
+      "translate": "advancements.strong_sorcerer_grade.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "strong_sorcerer_grade_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:special_grade_one"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:rct"
+    },
+    "title": {
+      "translate": "advancements.reverse_cursed_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.reverse_cursed_mastery.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reverse_cursed_mastery_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

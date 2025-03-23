@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "jujutsucraft:jujutsu_barrier",
+    "jujutsucraft:coffinofthe_ironmountain_1",
+    "jujutsucraft:coffinofthe_ironmountain_2",
+    "jujutsucraft:block_gravel",
+    "jujutsucraft:block_universe",
+    "jujutsucraft:in_barrier",
+    "jujutsucraft:block_red",
+    "jujutsucraft:domain_grass",
+    "jujutsucraft:domain_sand",
+    "jujutsucraft:domain_water",
+    "jujutsucraft:domain_blue_sky",
+    "jujutsucraft:domain_bone",
+    "jujutsucraft:domain_flower",
+    "jujutsucraft:domain_cloud",
+    "jujutsucraft:domain_stone_bricks",
+    "jujutsucraft:domain_ice",
+    "jujutsucraft:domain_blood",
+    "jujutsucraft:domain_planks",
+    "jujutsucraft:domain_podzol",
+    "jujutsucraft:domain_white",
+    "jujutsucraftaddon:snow_domain"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "test_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

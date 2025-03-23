@@ -1,0 +1,45 @@
+{
+  "forge_marker": 1,
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "jujutsucraftaddon:models/item/yamatosheath.obj",
+  "flip-v": true,
+		"display": {
+    	"thirdperson_righthand":
+    	{
+     		"translation": [6.5, -4.5, 6.4],
+     		"rotation": [90, 1, 0],
+     		"scale": [0.83, 0.8, 0.65]
+    	},
+    	"firstperson_righthand":
+    	{
+     		"translation": [10,-1,-5],
+     		"rotation": [ 85, -3, 0 ],
+    		"scale": [0.45, 0.45, 0.45]
+    	}, 
+    	"thirdperson_lefthand": 
+    	{
+      	"translation": [-6.5, -4.5, 6.4],
+     	"rotation": [90, 1, 0],
+     	"scale": [0.83, 0.8, 0.65]
+    	},
+    	"firstperson_lefthand": 
+    	{
+      	"translation": [-10,-1,-5],
+     	"rotation": [85, -3, 0 ],
+    	"scale": [0.45, 0.45, 0.45]
+        }
+  },
+  "textures": {
+    "back.002": "jujutsucraftaddon:block/back",
+    "cover.002": "jujutsucraftaddon:block/cover",
+    "inside.002": "jujutsucraftaddon:block/inside",
+    "sheath.001": "jujutsucraftaddon:block/sheath",
+    "handle.002": "jujutsucraftaddon:block/handle",
+    "bottem.002": "jujutsucraftaddon:block/bottem",
+    "blade.002": "jujutsucraftaddon:block/blade",
+    "rope.002": "jujutsucraftaddon:block/rope",
+    "surface.002": "jujutsucraftaddon:block/surface",
+    "particle": "jujutsucraftaddon:item/mai_gun"
+  }
+}

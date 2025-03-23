@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "jujutsucraft:sukuna_effect": {"amplifier": 13}
+    }
+  }
+}

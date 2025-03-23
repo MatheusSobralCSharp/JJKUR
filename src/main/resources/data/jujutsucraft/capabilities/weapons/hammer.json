@@ -1,0 +1,12 @@
+{
+	"attributes":
+	{
+		"two_hand":
+		{
+			"impact":1.9,
+			"max_strikes":2,
+			"speed_bonus": 1.3
+		}
+	},
+	"type":"jujutsucraft:weapon_nanami"
+}

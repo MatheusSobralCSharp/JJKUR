@@ -1,0 +1,6 @@
+{
+  "parent": "jujutsucraftaddon:displaysettings/g_warstaff.item_-_converted.geo",
+  "textures": {
+    "layer0": "jujutsucraftaddon:item/texture_36"
+  }
+}

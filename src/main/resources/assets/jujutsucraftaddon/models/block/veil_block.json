@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jujutsucraftaddon:block/veilbock",
+    "up": "jujutsucraftaddon:block/veilbock",
+    "north": "jujutsucraftaddon:block/veilbock",
+    "east": "jujutsucraftaddon:block/veilbock",
+    "south": "jujutsucraftaddon:block/veilbock",
+    "west": "jujutsucraftaddon:block/veilbock",
+    "particle": "jujutsucraftaddon:block/veilbock"
+  },
+  "render_type": "translucent"
+}

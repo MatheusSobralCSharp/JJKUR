@@ -1,0 +1,10 @@
+{
+    "type": "jujutsucraft:katana_sheathed",
+    "attributes": {
+        "common": {
+            "armor_negation": 0.0,
+                "impact": 0.5,
+            "max_strikes": 1
+        }
+    }
+ }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:sukunaa"
+    },
+    "title": {
+      "translate": "advancements.ultimate_power.title"
+    },
+    "description": {
+      "translate": "advancements.ultimate_power.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ultimate_power_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:world_slash_advancement"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "jujutsucraftaddon:displaysettings/yuundark.item",
+  "textures": {
+    "layer0": "jujutsucraftaddon:item/playful_cloud"
+  }
+}

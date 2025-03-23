@@ -1,0 +1,7 @@
+{
+  "parent": "jujutsucraftaddon:custom/itadoriarms2",
+  "textures": {
+    "0": "jujutsucraftaddon:block/bloodarms1",
+    "particle": "jujutsucraftaddon:item/fether"
+  }
+}

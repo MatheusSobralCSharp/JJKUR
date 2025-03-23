@@ -1,0 +1,10 @@
+{
+    "type": "jujutsucraft:weapon_nanami",
+    "attributes": {
+        "common": {
+            "armor_negation": 50.0,
+                "impact": 2.5,
+            "max_strikes": 1
+        }
+    }
+ }

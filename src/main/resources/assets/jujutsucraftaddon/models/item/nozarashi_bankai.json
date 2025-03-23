@@ -1,0 +1,8 @@
+{
+  "parent": "jujutsucraftaddon:custom/nozarashibankai",
+  "textures": {
+    "0": "jujutsucraftaddon:block/new_nozarashi_bankai1_texture",
+    "1": "jujutsucraftaddon:block/new_nozarashi_bankai2_texture",
+    "particle": "jujutsucraftaddon:item/cursedspirit_armoury"
+  }
+}

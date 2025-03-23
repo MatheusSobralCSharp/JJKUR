@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "noza1",
+        "2": "noza2"
+      },
+      "name": "default"
+    }
+  }
+}

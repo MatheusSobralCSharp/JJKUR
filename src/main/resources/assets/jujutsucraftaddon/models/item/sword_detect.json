@@ -1,0 +1,7 @@
+{
+  "parent": "jujutsucraftaddon:custom/kamish_dagger_2",
+  "textures": {
+    "0": "jujutsucraftaddon:block/kamish_dagger_2",
+    "particle": "jujutsucraftaddon:item/eye_png35670"
+  }
+}

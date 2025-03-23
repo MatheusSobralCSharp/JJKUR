@@ -1,0 +1,72 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"haiti": {
+			"animation_length": 0.25,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -45, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"torso": {
+					"rotation": {
+						"0.0": {
+							"vector": [12.60781, -7.32162, -1.62878]
+						},
+						"0.25": {
+							"vector": [12.797, 12.19844, 2.75171]
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [32.23334, 6.82194, 14.36263]
+						},
+						"0.25": {
+							"vector": [7.23334, 6.82194, 14.36263]
+						}
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-177.09449, -11.33817, 136.2189]
+						},
+						"0.25": {
+							"vector": [15.41, -11.34, 136.22]
+						}
+					},
+					"position": {
+						"vector": [1, 0, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [-15.35, -9.63, 11.46]
+					},
+					"position": {
+						"vector": [0, 0, 2]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"vector": [37.5, 0, 0]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"vector": [-18.29388, -16.66577, 5.41615]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

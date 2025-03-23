@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:barrierlesssymbol"
+    },
+    "title": {
+      "translate": "advancements.barrierless_domain_perfected.title"
+    },
+    "description": {
+      "translate": "advancements.barrierless_domain_perfected.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "barrierless_domain_perfected_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

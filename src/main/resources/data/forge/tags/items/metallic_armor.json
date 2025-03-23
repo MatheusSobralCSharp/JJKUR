@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:turtle_helmet",
+    "minecraft:iron_helmet",
+    "minecraft:golden_helmet",
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:golden_chestplate",
+    "minecraft:diamond_chestplate",
+    "minecraft:netherite_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:golden_leggings",
+    "minecraft:diamond_leggings",
+    "minecraft:netherite_leggings",
+    "minecraft:iron_boots",
+    "minecraft:golden_boots",
+    "minecraft:diamond_boots",
+    "minecraft:netherite_boots",
+    "jujutsucraft:armor_instant_spirit_bodyof_distorted_killing_helmet",
+    "jujutsucraft:armor_instant_spirit_bodyof_distorted_killing_chestplate",
+    "jujutsucraft:armor_instant_spirit_bodyof_distorted_killing_leggings",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:diamond_block",
+    "minecraft:netherite_block"
+  ]
+}

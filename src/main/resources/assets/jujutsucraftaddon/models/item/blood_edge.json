@@ -1,0 +1,7 @@
+{
+  "parent": "jujutsucraftaddon:custom/knife",
+  "textures": {
+    "0": "jujutsucraftaddon:block/blood",
+    "particle": "jujutsucraftaddon:item/fether"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "new_nozarashi_shikai1_texture",
+        "1": "new_nozarashi_shikai2_texture"
+      },
+      "name": "default"
+    }
+  }
+}

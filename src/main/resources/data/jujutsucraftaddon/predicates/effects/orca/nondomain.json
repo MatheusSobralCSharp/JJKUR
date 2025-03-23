@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "effects": {
+        "jujutsucraft:domain_expansion": {
+          "duration": {
+            "min": 100
+          }
+        }
+      }
+    }
+  }
+  

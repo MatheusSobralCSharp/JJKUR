@@ -1,0 +1,31 @@
+package com.jujutsu.jujutsucraftaddon.procedures;
+
+import com.jujutsu.jujutsucraftaddon.network.JujutsucraftaddonModVariables;
+import net.minecraft.commands.CommandSource;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.LevelAccessor;
+
+public class SokaMonaEffectStartedappliedProcedure {
+    public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+        if (entity == null)
+            return;
+
+        {
+            Entity _ent = entity;
+            if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+                _ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+                        _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "execute as @s run playsound jujutsucraftaddon:purplefinal master @a");
+            }
+        }
+
+        {
+            double _setval = 1;
+            entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                capability.soka = _setval;
+                capability.syncPlayerVariables(entity);
+            });
+        }
+    }
+}

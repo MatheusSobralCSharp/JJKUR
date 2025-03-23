@@ -1,0 +1,8 @@
+{
+  "parent": "jujutsucraftaddon:custom/nozarashishikai",
+  "textures": {
+    "0": "jujutsucraftaddon:block/new_nozarashi_shikai1_texture",
+    "1": "jujutsucraftaddon:block/new_nozarashi_shikai2_texture",
+    "particle": "jujutsucraftaddon:item/pngkey.com-kanji-png-3125397"
+  }
+}

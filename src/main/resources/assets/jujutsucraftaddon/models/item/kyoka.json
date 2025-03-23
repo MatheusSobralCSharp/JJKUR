@@ -1,0 +1,7 @@
+{
+  "parent": "jujutsucraftaddon:custom/kyoka",
+  "textures": {
+    "0": "jujutsucraftaddon:block/kyokatexture",
+    "particle": "jujutsucraftaddon:item/evidence"
+  }
+}

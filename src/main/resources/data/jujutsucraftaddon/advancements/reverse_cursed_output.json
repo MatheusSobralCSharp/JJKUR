@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:shoko"
+    },
+    "title": {
+      "translate": "advancements.reverse_cursed_output.title"
+    },
+    "description": {
+      "translate": "advancements.reverse_cursed_output.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reverse_cursed_output_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:reverse_cursed_mastery"
+}

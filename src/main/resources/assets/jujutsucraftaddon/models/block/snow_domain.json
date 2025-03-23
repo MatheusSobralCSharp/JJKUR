@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jujutsucraftaddon:block/snow",
+    "up": "jujutsucraftaddon:block/snow",
+    "north": "jujutsucraftaddon:block/snow",
+    "east": "jujutsucraftaddon:block/snow",
+    "south": "jujutsucraftaddon:block/snow",
+    "west": "jujutsucraftaddon:block/snow",
+    "particle": "jujutsucraftaddon:block/snow"
+  },
+  "render_type": "solid"
+}

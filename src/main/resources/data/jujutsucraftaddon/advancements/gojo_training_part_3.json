@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:gojo_training_3"
+    },
+    "title": {
+      "translate": "advancements.gojo_training_part_3.title"
+    },
+    "description": {
+      "translate": "advancements.gojo_training_part_3.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gojo_training_part_3_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:gojo_training_part_2"
+}

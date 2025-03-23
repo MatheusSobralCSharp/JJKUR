@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:gojo_training_1"
+    },
+    "title": {
+      "translate": "advancements.last_hope.title"
+    },
+    "description": {
+      "translate": "advancements.last_hope.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "last_hope_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:gojo_training_part_4"
+}

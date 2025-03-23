@@ -1,0 +1,8 @@
+{
+  "parent": "jujutsucraftaddon:custom/sword_kusakabe",
+  "textures": {
+    "0": "jujutsucraftaddon:block/hazymoonnn",
+    "1": "jujutsucraftaddon:block/hazyblase3",
+    "particle": "jujutsucraftaddon:item/fether"
+  }
+}

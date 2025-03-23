@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"rocksolid": {
+			"animation_length": 0.25,
+			"bones": {
+				"torso": {
+					"rotation": [7.5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-92.06058, 75.68879, -41.56056],
+					"position": [0, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-74.79553, 0.9458, 30.2456],
+					"position": [0, -1, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 22.5, 0]
+				},
+				"left_leg": {
+					"rotation": [16.7252, -13.69282, -7.60272],
+					"position": [1, 0, -1]
+				}
+			}
+		}
+	}
+}

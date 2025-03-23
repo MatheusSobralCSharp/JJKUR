@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"rightarmgone": {
+			"animation_length": 0.25,
+			"bones": {
+				"right_arm": {
+					"position": {
+						"vector": [0, -2658, 0]
+					}
+				}
+			}
+		}
+	}
+}

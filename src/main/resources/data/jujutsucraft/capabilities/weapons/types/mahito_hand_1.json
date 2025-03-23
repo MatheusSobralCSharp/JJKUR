@@ -1,0 +1,85 @@
+{
+	"category": "sword",
+	"hit_particle": "epicfight:entity.hit.blunt",
+	"hit_sound": "epicfight:entity.hit.blunt",
+	"swing_sound": "epicfight:entity.weapon.whoosh_hard",
+	"styles":
+	{
+		"cases":
+		[
+			{
+				"condition": "epicfight:offhand_category",
+				"predicate": {
+					"category": "sword"
+				},
+				"style": "two_hand"
+			}
+		],
+		"default": "one_hand"
+	},
+	"offhand_item_compatible_predicate":
+	{
+		"condition": "epicfight:offhand_category",
+		"predicate": {
+			"category": "sword"
+		}
+	},
+	"collider":
+    {
+        "number": 3,
+        "center": [0.0, 0.0, -0.75],
+        "size": [0.4, 0.4, 0.8]
+    },
+    "combos":
+    {
+    	"one_hand":
+    	[
+			"wom:biped/combat/moonless_auto_2",
+			"wom:biped/combat/moonless_auto_3",
+			"wom:biped/combat/agony_auto_4",
+			"wom:biped/combat/agony_auto_3",
+			"wom:biped/combat/enderblaster_onehand_auto_1",
+			"wom:biped/combat/enderblaster_onehand_auto_2",
+			"wom:biped/combat/enderblaster_onehand_dash",
+			"wom:biped/combat/enderblaster_twohand_dash"
+    	],
+    	"two_hand":
+    	[
+			"wom:biped/combat/moonless_auto_2",
+			"wom:biped/combat/moonless_auto_3",
+			"wom:biped/combat/agony_auto_4",
+			"wom:biped/combat/agony_auto_3",
+			"wom:biped/combat/enderblaster_onehand_auto_1",
+			"wom:biped/combat/enderblaster_onehand_auto_2",
+			"wom:biped/combat/enderblaster_onehand_dash",
+			"wom:biped/combat/enderblaster_twohand_dash"
+    	],
+    	"mount":
+    	[
+    		"epicfight:biped/combat/sword_mount_attack"
+    	]
+    },
+    "innate_skills":
+    {
+    	"one_hand": "epicfight:steel_whirlwind",
+    	"two_hand": "epicfight:steel_whirlwind"
+    },
+    "livingmotion_modifier": {
+    	"one_hand":
+    	{
+    		"block": "epicfight:biped/skill/guard_uchigatana",
+			"idle": "wom:biped/living/enderblaster_onehand_idle",
+			"run" : "wom:biped/living/enderblaster_onehand_run",
+			"walk": "wom:biped/living/enderblaster_onehand_walk",
+			"chase": "wom:biped/living/enderblaster_onehand_run"
+    	},
+    	"two_hand":
+    	{
+    		"block": "epicfight:biped/skill/guard_uchigatana",
+			"idle": "wom:biped/living/enderblaster_onehand_idle",
+			"run" : "wom:biped/living/enderblaster_onehand_run",
+			"walk": "wom:biped/living/enderblaster_onehand_walk",
+			"chase": "wom:biped/living/enderblaster_onehand_run"
+    	}
+    }
+}

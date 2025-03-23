@@ -1,0 +1,10 @@
+{
+  "parent": "jujutsucraftaddon:custom/greatsword",
+  "textures": {
+    "0": "jujutsucraftaddon:block/wukong_texture_01",
+    "2": "jujutsucraftaddon:block/wukong_animation_02",
+    "3": "jujutsucraftaddon:block/wukong_animation_03",
+    "4": "jujutsucraftaddon:block/wukong_animation_01",
+    "missing": "jujutsucraftaddon:block/"
+  }
+}

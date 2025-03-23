@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"fainted": {
+			"loop": true,
+			"animation_length": 0.3333,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": [-5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -10, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"vector": [60, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"vector": [-4.28082, -13.99545, 14.43276]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [5, 0, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"vector": [67.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, -9]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"vector": [-45, 0, 0]
+					},
+					"position": {
+						"vector": [0, 5, -2]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

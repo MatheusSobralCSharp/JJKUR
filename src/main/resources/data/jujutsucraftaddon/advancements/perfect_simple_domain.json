@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:mastery_simple_domain_item"
+    },
+    "title": {
+      "translate": "advancements.perfect_simple_domain.title"
+    },
+    "description": {
+      "translate": "advancements.perfect_simple_domain.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "perfect_simple_domain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

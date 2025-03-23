@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jujutsucraftaddon:item_test_2"
+    },
+    "title": {
+      "translate": "advancements.are_you_satoru_gojo.title"
+    },
+    "description": {
+      "translate": "advancements.are_you_satoru_gojo.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "are_you_satoru_gojo_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jujutsucraftaddon:welcome_to_jujutsu_plus"
+}

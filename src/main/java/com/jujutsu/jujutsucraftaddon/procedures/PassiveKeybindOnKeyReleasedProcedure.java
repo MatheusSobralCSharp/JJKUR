@@ -33,6 +33,7 @@ public class PassiveKeybindOnKeyReleasedProcedure {
         if (entity == null)
             return;
         NahProcedure.execute(world, x, y, z, entity);
+
         if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 1) {
             if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(JujutsucraftaddonModMobEffects.WORLD_CUT.get()))) {
                 if (entity instanceof ServerPlayer && entity.level() instanceof ServerLevel
@@ -140,7 +141,8 @@ public class PassiveKeybindOnKeyReleasedProcedure {
                     }
                 }
             }
-        } else if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique == 2) {
+        } else if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique == 2 && ((entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel
+                && _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().getAdvancement(new ResourceLocation("jujutsucraftaddon:gojo_training_part_4"))).isDone()))) {
             if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Gojo")) {
                 if (!(entity instanceof LivingEntity _livEnt29 && _livEnt29.hasEffect(JujutsucraftaddonModMobEffects.WORLD_GOJO.get()))) {
                     if (entity instanceof LivingEntity && ((LivingEntity) entity).hasEffect(JujutsucraftModMobEffects.SIX_EYES.get())) {
@@ -171,7 +173,7 @@ public class PassiveKeybindOnKeyReleasedProcedure {
 
                                 }
                             } else if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Moveset == 4) {
-                                if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).OutputLevel >= 4) {
+                                if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).OutputLevel >= 4 && ((LivingEntity) entity).hasEffect(JujutsucraftModMobEffects.ZONE.get()) && ((LivingEntity) entity).getHealth() <= ((LivingEntity) entity).getMaxHealth() / 2) {
                                     if (world.isClientSide()) {
                                         if (entity instanceof AbstractClientPlayer player) {
                                             var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));

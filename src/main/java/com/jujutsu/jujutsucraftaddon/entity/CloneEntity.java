@@ -232,6 +232,11 @@ public class CloneEntity extends TamableAnimal implements GeoEntity {
         CloneOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
         AIItadoriYujiProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
         if (this instanceof LivingEntity) {
+            if (this.getOwner() != null) {
+                if ((!this.getOwner().isAlive()) || this.getOwner().getHealth()<= 1) {
+                    this.discard();
+                }
+            }
             if (this.getEntityData().get(ATTACK_MODE)) {
                 if (this.getPersistentData().getDouble("cnt_x") != 0) {
                     if (Math.random() < (1) / ((float) 10)) {

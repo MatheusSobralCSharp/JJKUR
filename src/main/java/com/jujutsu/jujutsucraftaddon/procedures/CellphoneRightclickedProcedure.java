@@ -23,6 +23,9 @@ public class CellphoneRightclickedProcedure {
                     Component.literal(("Your Black Flash Chance is: " + (entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BFChance / 10) + "%"), false);
         if (entity instanceof Player _player && !_player.level().isClientSide())
             _player.displayClientMessage(
+                    Component.literal(("Your Shrine Technique Mastery is: " + (entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).TechniqueMastery)), false);
+        if (entity instanceof Player _player && !_player.level().isClientSide())
+            _player.displayClientMessage(
                     Component.literal(("Your Profession Mastery is: " + (entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).ProfessionEXP)), false);
         if (entity instanceof Player _player && !_player.level().isClientSide())
             _player.displayClientMessage(Component.literal(("Your Clan is: " + (entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans)), false);

@@ -131,6 +131,9 @@ public class CounterBurnoutProcedure {
                                                 }
                                             }
                                         }
+                                        if (entity instanceof LivingEntity _entity1 && !_entity1.level().isClientSide())
+                                            _entity1.addEffect(new MobEffectInstance(JujutsucraftModMobEffects.FATIGUE.get(), 300, 1, false, false));
+
                                     } else if (_livEnt9.hasEffect(JujutsucraftModMobEffects.UNSTABLE.get())) {
                                         _ent = entity;
                                         if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -191,6 +194,9 @@ public class CounterBurnoutProcedure {
                                         if (entity instanceof Player _player2 && !_player2.level().isClientSide()) {
                                             _player2.displayClientMessage(Component.literal("Recovered Exhausted Techniques"), false);
                                         }
+
+                                        if (entity instanceof LivingEntity _entity1 && !_entity1.level().isClientSide())
+                                            _entity1.addEffect(new MobEffectInstance(JujutsucraftModMobEffects.FATIGUE.get(), 300, 1, false, false));
                                         if (entity.getPersistentData().getDouble("CursedSpirit") != 1) {
                                             if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BrainDamage == 4) {
                                                 if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

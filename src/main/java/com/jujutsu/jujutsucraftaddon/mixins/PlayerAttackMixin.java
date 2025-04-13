@@ -33,6 +33,15 @@ public class PlayerAttackMixin {
             entiry_a = mc.player;
             AbstractClientPlayer player = mc.player;
             LevelAccessor world = mc.level;
+            if (((ForgeRegistries.ITEMS.getKey((entiry_a instanceof LivingEntity _livEnt2 ? _livEnt2.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("knife")))  {
+                if ((entiry_a.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans.contains("Majima")) {
+                    if (Math.random() < (1) / ((float) 40)) {
+                        JujutsucraftaddonMod.PACKET_HANDLER.sendToServer(new PacketEffects(4, entiry_a.getUUID()));
+                        JujutsucraftaddonMod.PACKET_HANDLER.sendToServer(new PacketEffects(0, entiry_a.getUUID()));
+                    }
+                }
+            }
+
             if ((entiry_a.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Run == 1) {
                 if (entiry_a instanceof LivingEntity _livEnt2 && _livEnt2.getMainHandItem().isEmpty()) {
                     if ((entiry_a.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Style == 0) {
@@ -396,7 +405,7 @@ public class PlayerAttackMixin {
                     }
                     JujutsucraftaddonMod.PACKET_HANDLER.sendToServer(new PacketEffects(0, entiry_a.getUUID()));
 
-                } else if (((ForgeRegistries.ITEMS.getKey((entiry_a instanceof LivingEntity _livEnt2 ? _livEnt2.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("itadori_arm")) || ((ForgeRegistries.ITEMS.getKey((entiry_a instanceof LivingEntity _livEnt2 ? _livEnt2.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("playful"))) {
+                } else if (((ForgeRegistries.ITEMS.getKey((entiry_a instanceof LivingEntity _livEnt2 ? _livEnt2.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("playful"))) {
                     int lastIndex = (int) (entiry_a.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).AttackAnimation;
                     lastIndex = lastIndex >= 5 ? 1 : lastIndex + 1;
                     {

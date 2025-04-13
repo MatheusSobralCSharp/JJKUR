@@ -651,8 +651,10 @@ public abstract class StartCursedTechniqueProcedureMixin {
                                             if (entity instanceof LivingEntity && !world.getLevelData().getGameRules().getBoolean(JujutsucraftaddonModGameRules.JJKU_NO_COOLDOWN)) {
                                                 _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) Math.round(Tick / 2), 0, false, false));
                                             }
-                                            if  ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BurnOutRCT) {
-                                                BurnoutKeyOnKeyPressedProcedure.execute(entity);
+                                            if (!entity.getPersistentData().getBoolean("PRESS_Z")) {
+                                                if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BurnOutRCT) {
+                                                    BurnoutKeyOnKeyPressedProcedure.execute(entity);
+                                                }
                                             }
                                         }
 
@@ -665,8 +667,10 @@ public abstract class StartCursedTechniqueProcedureMixin {
                                             if (entity instanceof LivingEntity && !world.getLevelData().getGameRules().getBoolean(JujutsucraftaddonModGameRules.JJKU_NO_COOLDOWN)) {
                                                 _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) Math.round(Tick), 0, false, false));
                                             }
-                                            if  ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BurnOutRCT) {
-                                                BurnoutKeyOnKeyPressedProcedure.execute(entity);
+                                            if (!entity.getPersistentData().getBoolean("PRESS_Z")) {
+                                                if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).BurnOutRCT) {
+                                                    BurnoutKeyOnKeyPressedProcedure.execute(entity);
+                                                }
                                             }
                                         }
 

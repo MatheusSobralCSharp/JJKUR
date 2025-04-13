@@ -11,14 +11,16 @@ import net.minecraft.world.level.LevelAccessor;
 public class M1sProcedure {
     public static void execute(LevelAccessor world, Entity entity) {
         if (entity instanceof LivingEntity _entity) {
-            entity.getPersistentData().putDouble("skill", 101);
-            if (!_entity.level().isClientSide()) {
-                _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME_COMBAT.get(), (int) 40, 0, false, false));
-                _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) 40, 0, false, false));
-                _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.CURSED_TECHNIQUE.get(), Integer.MAX_VALUE, 0, false, false));
+            if (!_entity.hasEffect(JujutsucraftModMobEffects.COOLDOWN_TIME.get())) {
+                entity.getPersistentData().putDouble("skill", 101);
+                if (!_entity.level().isClientSide()) {
+                    _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME_COMBAT.get(), (int) 40, 0, false, false));
+                    _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) 40, 0, false, false));
+                    _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.CURSED_TECHNIQUE.get(), Integer.MAX_VALUE, 0, false, false));
+                }
+                entity.getPersistentData().putDouble("cnt6", 3);
+                KeyStartTechniqueOnKeyReleasedProcedure.execute(entity);
             }
-            entity.getPersistentData().putDouble("cnt6", 4);
-            KeyStartTechniqueOnKeyReleasedProcedure.execute(entity);
         }
     }
 }

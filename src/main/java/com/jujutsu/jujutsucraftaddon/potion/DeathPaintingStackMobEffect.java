@@ -16,9 +16,9 @@ import java.util.List;
 public class DeathPaintingStackMobEffect extends MobEffect {
     public DeathPaintingStackMobEffect() {
         super(MobEffectCategory.BENEFICIAL, -1);
-        this.addAttributeModifier(Attributes.ATTACK_DAMAGE, "030a8d68-7999-3b04-96a3-64b805151712", 2, AttributeModifier.Operation.MULTIPLY_BASE);
-        this.addAttributeModifier(Attributes.ARMOR, "610a19dd-733b-387f-b14a-2b978a177180", 2, AttributeModifier.Operation.MULTIPLY_BASE);
-        this.addAttributeModifier(Attributes.ATTACK_SPEED, "ee8f143e-865b-3513-8557-19f3b7a34d1f", 2, AttributeModifier.Operation.MULTIPLY_BASE);
+        this.addAttributeModifier(Attributes.ATTACK_DAMAGE, "030a8d68-7999-3b04-96a3-64b805151712", 1.2, AttributeModifier.Operation.MULTIPLY_BASE);
+        this.addAttributeModifier(Attributes.ARMOR, "610a19dd-733b-387f-b14a-2b978a177180", 1.2, AttributeModifier.Operation.MULTIPLY_BASE);
+        this.addAttributeModifier(Attributes.ATTACK_SPEED, "ee8f143e-865b-3513-8557-19f3b7a34d1f", 1.2, AttributeModifier.Operation.MULTIPLY_BASE);
     }
 
     @Override

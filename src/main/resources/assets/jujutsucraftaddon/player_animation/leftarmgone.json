@@ -3,11 +3,10 @@
 	"animations": {
 		"leftarmgone": {
 			"animation_length": 0.25,
+			"override_previous_animation": true,
 			"bones": {
 				"left_arm": {
-					"position": {
-						"vector": [0, -2501, 0]
-					}
+					"position": [0, -2501, 0]
 				}
 			}
 		}

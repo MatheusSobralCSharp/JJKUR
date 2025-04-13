@@ -138,22 +138,22 @@ public class AltarMessageWukong {
             } else if (page == 10) {
                 if (entity instanceof ServerPlayer serverPlayer) {
                     MinecraftServer server = serverPlayer.server;
-                    SongOfTimeAbility.activateSongOfTime(server, serverPlayer);
+//                    SongOfTimeAbility.activateSongOfTime(server, serverPlayer);
                 }
             } else if (page == 11) {
                 if (entity instanceof ServerPlayer serverPlayer) {
                     MinecraftServer server = serverPlayer.server;
-                    SongOfTimeAbility.activateSongOfSnow(server, serverPlayer);
+//                    SongOfTimeAbility.activateSongOfSnow(server, serverPlayer);
                 }
             } else if (page == 12) {
                 if (entity instanceof ServerPlayer serverPlayer) {
                     MinecraftServer server = serverPlayer.server;
-                    SongOfTimeAbility.activateSongOfStorms(server, serverPlayer);
+//                    SongOfTimeAbility.activateSongOfStorms(server, serverPlayer);
                 }
             } else if (page == 13) {
                 if (entity instanceof ServerPlayer serverPlayer) {
                     MinecraftServer server = serverPlayer.server;
-                    SongOfTimeAbility.activateSunsSong(server, serverPlayer);
+//                    SongOfTimeAbility.activateSunsSong(server, serverPlayer);
                 }
             }
         }

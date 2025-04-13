@@ -92,6 +92,8 @@ public class AttackPlayerProcedure {
                                 _entity.addEffect(new MobEffectInstance(JujutsucraftModMobEffects.COOLDOWN_TIME.get(), 40, 1, false, false));
                             if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
                                 _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.ANTI_HEAL.get(), 40, 1, false, false));
+                            if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.ATTACKED.get(), 60, 1, false, false));
                         }
                     }
                 }

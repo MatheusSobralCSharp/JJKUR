@@ -18,6 +18,10 @@ public class ManifestationEffectExpiresProcedure {
                 entity.discard();
         } else if (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).startsWith("jujutsucraft")) {
             entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                capability.PlayerCurseTechnique = 5;
+                capability.syncPlayerVariables(entity);
+            });
+            entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
                 capability.PlayerCurseTechnique2 = 5;
                 capability.syncPlayerVariables(entity);
             });

@@ -82,10 +82,10 @@ public class GreatScreen extends Screen {
 
         UUID playerUUID = player.getUUID(); // Get the player's UUID
         options.add(new AltarOption("Disabled", 0, player));
-        options.add(new AltarOption("§4§lDamage Mode", 1, player));
-        options.add(new AltarOption("§5§lAmplification Mode", 2, player));
-        options.add(new AltarOption("§d§lFBE Mode", 3, player));
-        options.add(new AltarOption("§b§lS-Domain Mode", 4, player));
+        options.add(new AltarOption("§4Damage Mode", 1, player));
+        options.add(new AltarOption("§5Amplification Mode", 2, player));
+        options.add(new AltarOption("§dFBE Mode", 3, player));
+        options.add(new AltarOption("§bS-Domain Mode", 4, player));
         return options;
     }
 

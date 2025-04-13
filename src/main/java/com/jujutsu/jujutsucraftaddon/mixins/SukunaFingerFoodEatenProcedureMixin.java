@@ -43,75 +43,77 @@ public abstract class SukunaFingerFoodEatenProcedureMixin {
             double cursed_technique2 = 0.0;
             LivingEntity _livEnt33;
             LivingEntity _livEnt36;
-            if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-                if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 6
-                        || (entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 21
-                        || (entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 1 || (entity instanceof Player _plr && _plr.getAbilities().instabuild)) {
-                    if (((JujutsucraftModVariables.PlayerVariables) entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, (Direction) null).orElse(new JujutsucraftModVariables.PlayerVariables())).BodyItem.getCount() == 0.0) {
-                        if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Sukuna")) {
-                            if (Math.random() < (1) / ((float) 2)) {
-                                FingerEatedProcedure.execute(world, x, y, z, entity);
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
+            if (((JujutsucraftModVariables.PlayerVariables) entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, (Direction) null).orElse(new JujutsucraftModVariables.PlayerVariables())).BodyItem.getCount() <= 20.0) {
+                if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+                    if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 6
+                            || (entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 21
+                            || (entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 1 || (entity instanceof Player _plr && _plr.getAbilities().instabuild)) {
+                        if (((JujutsucraftModVariables.PlayerVariables) entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, (Direction) null).orElse(new JujutsucraftModVariables.PlayerVariables())).BodyItem.getCount() == 0.0) {
+                            if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Sukuna")) {
+                                if (Math.random() < (1) / ((float) 2)) {
+                                    FingerEatedProcedure.execute(world, x, y, z, entity);
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
 
+                                } else {
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
+                                    RejectProcedure.execute(world, x, y, z, entity);
+                                }
+                            } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Itadori")) {
+                                if (Math.random() < (1) / ((float) 3)) {
+                                    FingerEatedProcedure.execute(world, x, y, z, entity);
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
+                                } else {
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
+
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
+
+                                    RejectProcedure.execute(world, x, y, z, entity);
+                                }
+                            } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Trait).equals("The Fallen One")) {
+                                FingerEatedProcedure.execute(world, x, y, z, entity);
+                            } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Subrace).equals("Perfect Vessel")) {
+                                if (Math.random() < (1) / ((float) 3)) {
+                                    FingerEatedProcedure.execute(world, x, y, z, entity);
+                                }
                             } else {
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
-                                RejectProcedure.execute(world, x, y, z, entity);
-                            }
-                        } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Itadori")) {
-                            if (Math.random() < (1) / ((float) 3)) {
-                                FingerEatedProcedure.execute(world, x, y, z, entity);
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
-                            } else {
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
+                                if (Math.random() < (25) / ((float) 100)) {
+                                    FingerEatedProcedure.execute(world, x, y, z, entity);
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
+                                } else {
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
 
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
-
-                                RejectProcedure.execute(world, x, y, z, entity);
-                            }
-                        } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Trait).equals("The Fallen One")) {
-                            FingerEatedProcedure.execute(world, x, y, z, entity);
-                        } else if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Subrace).equals("Perfect Vessel")) {
-                            if (Math.random() < (1) / ((float) 3)) {
-                                FingerEatedProcedure.execute(world, x, y, z, entity);
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
+                                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                        _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
+                                    RejectProcedure.execute(world, x, y, z, entity);
+                                }
                             }
                         } else {
-                            if (Math.random() < (25) / ((float) 100)) {
-                                FingerEatedProcedure.execute(world, x, y, z, entity);
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.SUKUNA_SPAWNING.get(), 60, 1, false, false));
-                            } else {
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.HAHAHAHA.get(), 120, 254, false, false));
-
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 254, false, false));
-                                if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                                    _entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 120, 254, false, false));
-                                RejectProcedure.execute(world, x, y, z, entity);
-                            }
+                            FingerEatedProcedure.execute(world, x, y, z, entity);
                         }
                     } else {
-                        FingerEatedProcedure.execute(world, x, y, z, entity);
+                        if (entity instanceof Player _player && !_player.level().isClientSide())
+                            _player.displayClientMessage(Component.literal("Nuh Uh"), false);
+                        CongratulationsProcedure.execute(world, x, y, z);
                     }
-                } else {
-                    if (entity instanceof Player _player && !_player.level().isClientSide())
-                        _player.displayClientMessage(Component.literal("Nuh Uh"), false);
-                    CongratulationsProcedure.execute(world, x, y, z);
-                }
 
-            } else {
-                FingerEatedProcedure.execute(world, x, y, z, entity);
+                } else {
+                    FingerEatedProcedure.execute(world, x, y, z, entity);
+                }
             }
         }
     }

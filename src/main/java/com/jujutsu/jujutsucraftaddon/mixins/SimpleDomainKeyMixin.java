@@ -1,5 +1,10 @@
 package com.jujutsu.jujutsucraftaddon.mixins;
 
+import com.jujutsu.jujutsucraftaddon.procedures.SimpleAnimProcedure;
+import dev.kosmx.playerAnim.api.layered.KeyframeAnimationPlayer;
+import dev.kosmx.playerAnim.api.layered.ModifierLayer;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
 import net.mcreator.jujutsucraft.init.JujutsucraftModAttributes;
 import net.mcreator.jujutsucraft.init.JujutsucraftModMobEffects;
 import net.mcreator.jujutsucraft.network.JujutsucraftModVariables;
@@ -8,6 +13,7 @@ import net.mcreator.jujutsucraft.procedures.KeySimpleDomainOnKeyReleasedProcedur
 import net.mcreator.jujutsucraft.procedures.LogicSimpleDomainProcedure;
 import net.mcreator.jujutsucraft.procedures.PlayAnimationProcedure;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
@@ -20,6 +26,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -36,6 +44,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.Objects;
+
 @Mixin(value = KeySimpleDomainOnKeyPressedProcedure.class, priority = -10000)
 public abstract class SimpleDomainKeyMixin {
 
@@ -47,7 +57,6 @@ public abstract class SimpleDomainKeyMixin {
     @Inject(at = @At("HEAD"), method = "execute", remap = false, cancellable = true)
     private static void execute(LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
         ci.cancel();
-
         if (entity != null) {
             boolean number;
             boolean on;
@@ -59,6 +68,9 @@ public abstract class SimpleDomainKeyMixin {
             double num2;
             LivingEntity _livEnt;
             LivingEntity _entity;
+
+            SimpleAnimProcedure.execute(world, entity);
+
             label356:
             {
                 number = false;

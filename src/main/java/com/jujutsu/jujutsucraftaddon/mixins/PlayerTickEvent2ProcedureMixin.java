@@ -154,19 +154,20 @@ public abstract class PlayerTickEvent2ProcedureMixin {
                 }
             }
 
-
-            if (EnchantmentHelper.getItemEnchantmentLevel(JujutsucraftaddonModEnchantments.CE_HEALTH_REGENERATION.get(), (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0) {
-                if (!(entity instanceof LivingEntity _livEnt30 && _livEnt30.hasEffect(MobEffects.REGENERATION))) {
-                    if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                        _entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60,
-                                (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getEnchantmentLevel(JujutsucraftaddonModEnchantments.CE_HEALTH_REGENERATION.get()), false, true));
-                }
-                {
-                    double _setval5 = ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCursePower - 1);
-                    entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-                        capability.PlayerCursePower = _setval5;
-                        capability.syncPlayerVariables(entity);
-                    });
+            if (entity instanceof LivingEntity _liv1 && _liv1.getHealth() != _liv1.getMaxHealth()) {
+                if (EnchantmentHelper.getItemEnchantmentLevel(JujutsucraftaddonModEnchantments.CE_HEALTH_REGENERATION.get(), (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0) {
+                    if (!(entity instanceof LivingEntity _livEnt30 && _livEnt30.hasEffect(MobEffects.REGENERATION))) {
+                        if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                            _entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60,
+                                    (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getEnchantmentLevel(JujutsucraftaddonModEnchantments.CE_HEALTH_REGENERATION.get()), false, true));
+                    }
+                    {
+                        double _setval5 = ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCursePower - 1);
+                        entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                            capability.PlayerCursePower = _setval5;
+                            capability.syncPlayerVariables(entity);
+                        });
+                    }
                 }
             }
 

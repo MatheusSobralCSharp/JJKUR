@@ -62,7 +62,7 @@ public class AltarMessageShortcut {
             // Increment counter
             currentCount++;
 
-            if (currentCount >= 9) {
+            if (currentCount >= 2) {
                 // Execute the action when the counter reaches 5
                 ShortCutAction.execute(targetPlayer, message.page);
 

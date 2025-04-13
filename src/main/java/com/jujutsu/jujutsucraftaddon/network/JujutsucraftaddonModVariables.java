@@ -126,6 +126,7 @@ public class JujutsucraftaddonModVariables {
             clone.BarrierlessDomainNumber = original.BarrierlessDomainNumber;
             clone.BFChance = original.BFChance;
             clone.blackflashmastery = original.blackflashmastery;
+            clone.TechniqueMastery = original.TechniqueMastery;
             clone.CE = original.CE;
             clone.CECap = original.CECap;
             clone.CEFormer = original.CEFormer;
@@ -534,6 +535,7 @@ public class JujutsucraftaddonModVariables {
         public double BarrierlessDomainNumber = 0;
         public double BFChance = 0;
         public double blackflashmastery = 1.0;
+        public double TechniqueMastery = 0.0;
         public double BrainDamage = 0;
         public double CE = 0;
         public double CECap = 0;
@@ -713,6 +715,7 @@ public class JujutsucraftaddonModVariables {
             nbt.putDouble("BarrierlessDomainNumber", BarrierlessDomainNumber);
             nbt.putDouble("BFChance", BFChance);
             nbt.putDouble("blackflashmastery", blackflashmastery);
+            nbt.putDouble("TechniqueMastery", TechniqueMastery);
             nbt.putDouble("BrainDamage", BrainDamage);
             nbt.putDouble("CE", CE);
             nbt.putDouble("CECap", CECap);
@@ -889,6 +892,7 @@ public class JujutsucraftaddonModVariables {
             BarrierlessDomainNumber = nbt.getDouble("BarrierlessDomainNumber");
             BFChance = nbt.getDouble("BFChance");
             blackflashmastery = nbt.getDouble("blackflashmastery");
+            TechniqueMastery = nbt.getDouble("TechniqueMastery");
             BrainDamage = nbt.getDouble("BrainDamage");
             CE = nbt.getDouble("CE");
             CECap = nbt.getDouble("CECap");
@@ -1086,6 +1090,7 @@ public class JujutsucraftaddonModVariables {
                     variables.BarrierlessDomainNumber = message.data.BarrierlessDomainNumber;
                     variables.BFChance = message.data.BFChance;
                     variables.blackflashmastery = message.data.blackflashmastery;
+                    variables.TechniqueMastery = message.data.TechniqueMastery;
                     variables.BrainDamage = message.data.BrainDamage;
                     variables.CE = message.data.CE;
                     variables.CECap = message.data.CECap;

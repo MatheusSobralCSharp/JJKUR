@@ -156,11 +156,19 @@ public class JujutsucraftaddonModKeyMappings {
             var player = minecraft.player;
             if (isDownOld != isDown && isDown) {
                 assert player != null;
-                Minecraft.getInstance().execute(() -> {
-                    if (Minecraft.getInstance().screen == null) {
-                        Minecraft.getInstance().setScreen(new MasteryScreen());
-                    }
-                });
+                if (player.isShiftKeyDown()) {
+                    Minecraft.getInstance().execute(() -> {
+                        if (Minecraft.getInstance().screen == null) {
+                            Minecraft.getInstance().setScreen(new GreatScreen());
+                        }
+                    });
+                } else {
+                    Minecraft.getInstance().execute(() -> {
+                        if (Minecraft.getInstance().screen == null) {
+                            Minecraft.getInstance().setScreen(new MasteryScreen());
+                        }
+                    });
+                }
             }
             isDownOld = isDown;
         }

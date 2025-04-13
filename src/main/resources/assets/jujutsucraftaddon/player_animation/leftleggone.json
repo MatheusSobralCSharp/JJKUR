@@ -3,11 +3,10 @@
 	"animations": {
 		"leftleggone": {
 			"animation_length": 0.25,
+			"override_previous_animation": true,
 			"bones": {
 				"left_leg": {
-					"position": {
-						"vector": [0, -2114, 0]
-					}
+					"position": [0, -2114, 0]
 				}
 			}
 		}

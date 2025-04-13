@@ -31,21 +31,61 @@ public class LimbsEffectOnEffectActiveTickProcedure {
     public static void execute(LevelAccessor world, Entity entity) {
         if (entity == null)
             return;
+        Entity entiry_a;
+        entiry_a = entity;
+        double NUM2 = 0.0;
+        double NUM3 = 0.0;
+        double rnd = 0.0;
+        double NUM1 = 0.0;
+        ModifierLayer animation;
+        AbstractClientPlayer player;
+
+        if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 1) {
+            if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                player = (AbstractClientPlayer) entiry_a;
+                animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                if (animation != null) {
+                    animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftarmgone"))));
+                }
+            }
+        }
+
+        if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 2) {
+            if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                player = (AbstractClientPlayer) entiry_a;
+                animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                if (animation != null) {
+                    animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftleggone"))));
+                }
+            }
+        }
+
+        if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 3) {
+            if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                player = (AbstractClientPlayer) entiry_a;
+                animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                if (animation != null) {
+                    animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightarmgone"))));
+                }
+            }
+        }
+
+        if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 4) {
+            if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                player = (AbstractClientPlayer) entiry_a;
+                animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                if (animation != null) {
+                    animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightleggone"))));
+                }
+            }
+        }
+
         if (world.getLevelData().getGameRules().getBoolean(JujutsucraftaddonModGameRules.JJKU_LIMB_LOSS)) {
             if (entity.isAlive()) {
                 if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
                     entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jujutsucraft:damage_curse")))), 10);
                 }
                 if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 1) {
-                    if (world.isClientSide()) {
-                        if (entity instanceof AbstractClientPlayer player) {
-                            var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                            if (animation != null) {
-                                animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftarmgone")))));
-                            }
-                        }
-                    }
-
                     if (new Object() {
                         public double getValue() {
                             CompoundTag dataIndex = new CompoundTag();
@@ -102,15 +142,6 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                     }
                 }
                 if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 2) {
-                    if (world.isClientSide()) {
-                        if (entity instanceof AbstractClientPlayer player) {
-                            var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                            if (animation != null) {
-                                animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftleggone")))));
-                            }
-                        }
-                    }
-
                     if (!(entity instanceof LivingEntity _livEnt42 && _livEnt42.hasEffect(MobEffects.MOVEMENT_SLOWDOWN))) {
                         if (entity instanceof LivingEntity && ((LivingEntity) entity).hasEffect(JujutsucraftModMobEffects.INFINITY_EFFECT.get())) {
                             if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -141,14 +172,7 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                     }
                 }
                 if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 3) {
-                    if (world.isClientSide()) {
-                        if (entity instanceof AbstractClientPlayer player) {
-                            var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                            if (animation != null) {
-                                animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightarmgone")))));
-                            }
-                        }
-                    }
+
 
                     if (new Object() {
                         public double getValue() {
@@ -206,15 +230,6 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                     }
                 }
                 if ((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Limb == 4) {
-                    if (world.isClientSide()) {
-                        if (entity instanceof AbstractClientPlayer player) {
-                            var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                            if (animation != null) {
-                                animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightleggone")))));
-                            }
-                        }
-                    }
-
                     if ((entity.getDirection()) == Direction.NORTH) {
                         if (world instanceof ServerLevel _level)
                             _level.sendParticles(JujutsucraftaddonModParticleTypes.BLOOD_RED.get(), (entity.getX() + 0.1), (entity.getY() + 0.5), (entity.getZ()), 0, 0, 0, 0, 0.1);
@@ -301,12 +316,11 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                                 capability.syncPlayerVariables(entity);
                             });
                         }
-                        if (world.isClientSide()) {
-                            if (entity instanceof AbstractClientPlayer player) {
-                                var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                                if (animation != null) {
-                                    animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftarmrecover")))));
-                                }
+                        if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                            player = (AbstractClientPlayer) entiry_a;
+                            animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                            if (animation != null) {
+                                animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftarmrecover"))));
                             }
                         }
 
@@ -379,15 +393,13 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                                 capability.syncPlayerVariables(entity);
                             });
                         }
-                        if (world.isClientSide()) {
-                            if (entity instanceof AbstractClientPlayer player) {
-                                var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                                if (animation != null) {
-                                    animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightarmrecover"))));
-                                }
+                        if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                            player = (AbstractClientPlayer) entiry_a;
+                            animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                            if (animation != null) {
+                                animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightarmrecover"))));
                             }
                         }
-
                         if (entity instanceof Player _player && !_player.level().isClientSide())
                             _player.displayClientMessage(Component.literal("Arm Recovered"), false);
                         {
@@ -465,12 +477,11 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                                 capability.syncPlayerVariables(entity);
                             });
                         }
-                        if (world.isClientSide()) {
-                            if (entity instanceof AbstractClientPlayer player) {
-                                var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                                if (animation != null) {
-                                    animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftlegrecover")))));
-                                }
+                        if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                            player = (AbstractClientPlayer) entiry_a;
+                            animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                            if (animation != null) {
+                                animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "leftlegrecover"))));
                             }
                         }
                         if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -535,12 +546,11 @@ public class LimbsEffectOnEffectActiveTickProcedure {
                                 capability.syncPlayerVariables(entity);
                             });
                         }
-                        if (world.isClientSide()) {
-                            if (entity instanceof AbstractClientPlayer player) {
-                                var animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
-                                if (animation != null) {
-                                    animation.setAnimation(new KeyframeAnimationPlayer(Objects.requireNonNull(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightlegrecover")))));
-                                }
+                        if (world.isClientSide() && entiry_a instanceof AbstractClientPlayer) {
+                            player = (AbstractClientPlayer) entiry_a;
+                            animation = (ModifierLayer) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("jujutsucraftaddon", "player_animation"));
+                            if (animation != null) {
+                                animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("jujutsucraftaddon", "rightlegrecover"))));
                             }
                         }
                         if (entity instanceof Player _player && !_player.level().isClientSide())

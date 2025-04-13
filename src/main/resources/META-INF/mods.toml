@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="jujutsucraftaddon"
-version="9.0.43"
+version="9.3.43"
 displayName="JJKUR"
 displayURL="https://www.curseforge.com/members/satuxhi/projects"
 logoFile="logo.png"
@@ -26,7 +26,7 @@ description="Reworked Addon, Jujutsu Kaisen: Ultimate"
 [[dependencies.jujutsucraftaddon]]
     modId="jujutsucraftaddon"
     mandatory=true
-    versionRange="[9.0.43]"
+    versionRange="[9.3.43]"
     ordering="NONE"
     side="BOTH"
 

@@ -17,9 +17,8 @@ public class ShortCutAction {
             switch (page) {
                 case 0 -> PassiveKeybindOnKeyPressedProcedure.execute(world, x, y, z, entity);
                 case 1 -> CursedFistsKeybindOnKeyPressedProcedure.execute(world, entity);
-                case 2 -> OpenMastery.execute(world, entity);
-                case 3 -> DomainExpansionOnKeyPressedProcedure.execute(world, x, y, z, entity);
-                case 4 -> DomainTypeOnKeyPressedProcedure.execute(entity);
+                case 2 -> DomainExpansionOnKeyPressedProcedure.execute(world, x, y, z, entity);
+                case 3 -> DomainTypeOnKeyPressedProcedure.execute(entity);
             }
         }
 

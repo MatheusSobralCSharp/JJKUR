@@ -63,6 +63,22 @@ public class Die1Procedure {
             return;
 
         StyleDrops.execute(world, entity, sourceentity);
+
+        if (entity instanceof LivingEntity _ent && _ent.hasEffect(JujutsucraftaddonModMobEffects.CLONE_TICKED.get())) {
+            {
+                final Vec3 _center = new Vec3(x, y, z);
+                List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(300), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+                for (Entity entityiterator : _entfound) {
+                    if (entityiterator instanceof LivingEntity){
+                        if (entityiterator.getPersistentData().getString("OWNER_UUID").equals(entity.getStringUUID())) {
+                            entityiterator.discard();
+                        } else if (entityiterator.getPersistentData().getString("Owner").equals(entity.getStringUUID())) {
+                            entityiterator.discard();
+                        }
+                    }
+                }
+            }
+        }
         if (entity instanceof GojoSatoruSchoolDaysEntity _gojo && _gojo.getEntityData().get(GojoSatoruSchoolDaysEntity.DATA_awaking) && sourceentity instanceof FushiguroTojiEntity) {
             SokaProcedure.execute(entity);
             if (entity instanceof LivingEntity _ent) {
@@ -541,9 +557,6 @@ public class Die1Procedure {
                         }
                     }
                 }
-                if ((sourceentity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCurseTechnique2 == 2) {
-                    QuestGojoProcedure.execute(entity, sourceentity);
-                }
                 if ((sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).History == 1) {
                     if ((Objects.requireNonNull(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType())).toString()).equals("jujutsucraft:fushiguro_toji")) {
                         {
@@ -907,27 +920,27 @@ public class Die1Procedure {
                     capability.syncPlayerVariables(entity);
                 });
             }
-            if ((sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Timer1 == 1) {
-                if (sourceentity.getPersistentData().getDouble("CursedSpirit") == 1) {
-                    if (!(sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).IsVessel) {
-                        if ((Objects.requireNonNull(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType())).toString()).equals("jujutsucraft:mahito") || (Objects.requireNonNull(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType())).toString()).equals("jujutsucraft:jogo")) {
-                            if (Math.random() <= (world.getLevelData().getGameRules().getInt(JujutsucraftaddonModGameRules.JJKU_DROP_RATE)) * 0.00002) {
-                                if (!((sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Subrace).equals("Disaster Curses")) {
-                                    if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-                                        _player.displayClientMessage(Component.literal("You Now Awakened a new Level"), false);
-                                    {
-                                        String _setval = "Disaster Curses";
-                                        sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-                                            capability.Subrace = _setval;
-                                            capability.syncPlayerVariables(sourceentity);
-                                        });
-                                    }
+
+            if (sourceentity.getPersistentData().getDouble("CursedSpirit") == 1) {
+                if (!(sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).IsVessel) {
+                    if (entity instanceof JogoEntity || entity instanceof MahitoEntity) {
+                        if (Math.random() <= (world.getLevelData().getGameRules().getInt(JujutsucraftaddonModGameRules.JJKU_DROP_RATE)) * 0.0001) {
+                            if (!((sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Subrace).equals("Disaster Curses")) {
+                                if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+                                    _player.displayClientMessage(Component.literal("You Now Awakened a new Level"), false);
+                                {
+                                    String _setval = "Disaster Curses";
+                                    sourceentity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                                        capability.Subrace = _setval;
+                                        capability.syncPlayerVariables(sourceentity);
+                                    });
                                 }
                             }
                         }
                     }
                 }
             }
+
             if (entity instanceof LivingEntity _livEnt143 && _livEnt143.hasEffect(JujutsucraftaddonModMobEffects.BATTLE.get())) {
                 if (sourceentity instanceof LivingEntity _livEnt144 && _livEnt144.hasEffect(JujutsucraftaddonModMobEffects.BATTLE.get())) {
                     if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())

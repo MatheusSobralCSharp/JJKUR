@@ -82,9 +82,8 @@ public class AltarShortcut extends Screen {
 
         options.add(new AltarOption("Passive(CT)", 0, player));
         options.add(new AltarOption("Cursed Fists", 1, player));
-        options.add(new AltarOption("Cursed Mastery", 2, player));
-        options.add(new AltarOption("Domain Expansion", 3, player));
-        options.add(new AltarOption("Domain Type", 4, player));
+        options.add(new AltarOption("Domain Expansion", 2, player));
+        options.add(new AltarOption("Domain Type", 3, player));
         return options;
     }
 

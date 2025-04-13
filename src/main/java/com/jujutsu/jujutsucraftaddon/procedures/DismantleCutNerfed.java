@@ -15,7 +15,7 @@ public class DismantleCutNerfed {
             entity.getPersistentData().putBoolean("flag_dismantle", true);
             if (!_entity.level().isClientSide()) {
                 _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.CURSED_TECHNIQUE.get(), Integer.MAX_VALUE, 0, false, false));
-                _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) 400, 0, false, false));
+                _entity.addEffect(new MobEffectInstance((MobEffect) JujutsucraftModMobEffects.COOLDOWN_TIME.get(), (int) 120, 0, false, false));
             }
         }
     }

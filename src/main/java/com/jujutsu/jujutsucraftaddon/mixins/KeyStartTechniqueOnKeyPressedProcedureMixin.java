@@ -44,27 +44,28 @@ public abstract class KeyStartTechniqueOnKeyPressedProcedureMixin {
             HRAttack1Procedure.execute(world, x, y, z, entity);
         }
 
-
-        if (((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerSelectCurseTechniqueName).contains("Clone")) {
-            if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(JujutsucraftaddonModMobEffects.CLONE_TICKED.get()))) {
-                if (!(entity.isShiftKeyDown())) {
-                    SpawnCloneProcedure.execute(world, x, y, z, entity);
-                    if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Wukong") && (Math.random() < (1) / ((float) 3))) {
-                        if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                            _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.CLONE_TICKED.get(), -1, 1, false, false));
-                    } else if (!(((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Wukong"))){
-                        if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-                            _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.CLONE_TICKED.get(), -1, 1, false, false));
+        if ((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerCursePower > 1500) {
+            if (((entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables())).PlayerSelectCurseTechniqueName).contains("Clone")) {
+                if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(JujutsucraftaddonModMobEffects.CLONE_TICKED.get()))) {
+                    if (!(entity.isShiftKeyDown())) {
+                        SpawnCloneProcedure.execute(world, x, y, z, entity);
+                        if (((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Wukong") && (Math.random() < (1) / ((float) 3))) {
+                            if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.CLONE_TICKED.get(), -1, 1, false, false));
+                        } else if (!(((entity.getCapability(JujutsucraftaddonModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftaddonModVariables.PlayerVariables())).Clans).equals("Wukong"))) {
+                            if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+                                _entity.addEffect(new MobEffectInstance(JujutsucraftaddonModMobEffects.CLONE_TICKED.get(), -1, 1, false, false));
+                        }
+                        if (entity instanceof Player) {
+                            double _setval = entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables()).PlayerCursePower - 1500.0;
+                            entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent((capability) -> {
+                                capability.PlayerCursePower = _setval;
+                                capability.syncPlayerVariables(entity);
+                            });
+                        }
+                        if (entity instanceof Player _player && !_player.level().isClientSide())
+                            _player.displayClientMessage(Component.literal("Clone Spawned"), true);
                     }
-                    if (entity instanceof Player) {
-                        double _setval = entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JujutsucraftModVariables.PlayerVariables()).PlayerCursePower - 1500.0;
-                        entity.getCapability(JujutsucraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent((capability) -> {
-                            capability.PlayerCursePower = _setval;
-                            capability.syncPlayerVariables(entity);
-                        });
-                    }
-                    if (entity instanceof Player _player && !_player.level().isClientSide())
-                        _player.displayClientMessage(Component.literal("Clone Spawned"), true);
                 }
             }
         }
